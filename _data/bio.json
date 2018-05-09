@@ -45,7 +45,7 @@
       "keywords": [
         "CUDA",
         "MPI",
-        "OpenMP"
+        "OpenMP",
         "Pthread"
       ]
     },
