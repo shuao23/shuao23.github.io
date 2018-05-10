@@ -24,8 +24,7 @@ Shape Shifter is an Android game built with Unity3D in C#. The game was one of m
 The purpose of this summer project is to
 </p>
 
-
-The Android game can be seen at the [Google Playstore](https://play.google.com/store/apps/details?id=com.Azuligno.ShapeShifter).
-
-
+<p>
+The Android game can be seen at the <a href="https://play.google.com/store/apps/details?id=com.Azuligno.ShapeShifter" target="_blank">Google Playstore</a>.
+</p>
 
