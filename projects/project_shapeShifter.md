@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/shapeshifter_logo.png
+image: images/shapeshifter_banner_square.png
 title: Shape Shifter
 permalink: projects/shapeshifter
 # All dates must be YYYY-MM-DD format!
