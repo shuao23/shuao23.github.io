@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/micromouse.jpg
+image: images/shapeshifter_logo.png
 title: Shape Shifter
 permalink: projects/shapeshifter
 # All dates must be YYYY-MM-DD format!
