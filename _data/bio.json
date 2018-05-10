@@ -2,7 +2,7 @@
   "basics": {
     "name": "Shuhei Aoki",
     "label": "Programmer",
-    "picture": "https://shuao23.github.io/template/images/molly.png",
+    "picture": "https://shuao23.github.io/images/molly.png",
     "email": "shuao23@gmail.com",
     "phone": "808-228-3091",
     "website": "https://shuao23.github.io",
@@ -84,10 +84,12 @@
     {
       "institution": "Illinois Institute of Technology, Chicago, IL",
       "area": "Computer Engineering (Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2014",
-      "endDate": "2018",
+      "studyType": "Bachelor of Science",
+      "startDate": "Fall 2014",
+      "endDate": "Spring 2018",
       "gpa": "3.86",
+      "majorGpa": "4.0",
+      "maxGpa": "4.0",
       "courses": [
         "Data Structures and Algorithms",
         "Introduction to Algorithms",
