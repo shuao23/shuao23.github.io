@@ -16,15 +16,22 @@ summary: A personal summer project to develop an android game on Unity3d.
 <img class="ui fluid rounded image" src="http://shuao23.github.io/images/shapeshifter_banner.png">
 
 <p>
-Shape Shifter is an Android game built with Unity3D in C#. The game was one of my personal projects during the summer of 2016. The project started off with brainstorming creating as many game concepts on a piece of paper. After thinking of many ideas, the most interesting looking games were put into Unity as a prototype game. The most entertaining prototype was a game where the player morphs a shape into a triangle, square, pentagon, or a hexagon to match edges which flies towards the shape. This game is now known as <i>Shape Shifter</i>.
+Shape Shifter is an Android game built with Unity3D in C#. The game was one of my personal projects during the summer of 2016. The project started off with brainstorming and creating as many game concepts on a piece of paper. After thinking of many ideas, the most interesting games were put into Unity as a prototype. The most entertaining prototype was a game where the player morphs into a triangle, square, pentagon, or a hexagon to match the edges which flies towards the player. This game is now known as <i>Shape Shifter</i>. The purpose of this summer project was to experience the whole process of developing a game to publishing it to the Google Playstore.
 </p>
 
-<h2>Purpose</h2>
+<h2>Brainstorming</h2>
 <p>
-The purpose of this summer project is to
+The project started off by brainstorming ideas on to a piece of paper and sketching out many concepts as possible. The shape shifting idea came from a kids toy where you have to match the shapes with the holes in the box. 
 </p>
 
-<img class="ui fluid rounded image" src="http://shuao23.github.io/images/shapeshifter_edges.png">
+<div class="ui small centered images">
+  <img src="http://shuao23.github.io/images/shapeshifter_prototype1.jpg">
+  <img src="http://shuao23.github.io/images/shapeshifter_prototype2.jpg">
+</div>
+
+<img class="ui centered large rounded image" src="http://shuao23.github.io/images/shapeshifter_edges.png">
+
+<img class="ui centered large rounded image" src="http://shuao23.github.io/images/shapeshifter_gameplay.png">
 
 <p>
 The Android game can be seen at the <a href="https://play.google.com/store/apps/details?id=com.Azuligno.ShapeShifter" target="_blank">Google Playstore</a>.
