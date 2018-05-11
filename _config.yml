@@ -24,4 +24,5 @@ rouge-theme: igorpro
 # YOU NORMALLY NEVER CHANGE THE FOLLOWING
 markdown: kramdown
 include: [_data]
+exclude: ["source", "shuao23.github.io.code-workspace", "README.md", "LICENSE", "Gemfile", "Gemfile.lock"]
 

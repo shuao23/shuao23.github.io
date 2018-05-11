@@ -5,3 +5,6 @@
 _site/
 .sass-cache/
 *.code-workspace
+Gemfile
+Gemfile.lock
+.jekyll-metadata
