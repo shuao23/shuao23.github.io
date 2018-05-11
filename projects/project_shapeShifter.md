@@ -24,9 +24,9 @@ Shape Shifter is an Android game built with Unity3D in C#. The game was one of m
 The project started off by brainstorming ideas on to a piece of paper and sketching out many concepts as possible. The shape shifting idea came from a kids toy where you have to match the shapes with the holes in the box. 
 </p>
 
-<div class="ui small centered images">
-  <img src="http://shuao23.github.io/images/shapeshifter_prototype1.jpg">
-  <img src="http://shuao23.github.io/images/shapeshifter_prototype2.jpg">
+<div class="ui images">
+  <img class="ui centered image" src="http://shuao23.github.io/images/shapeshifter_prototype1.jpg">
+  <img class="ui centered image" src="http://shuao23.github.io/images/shapeshifter_prototype2.jpg">
 </div>
 
 <img class="ui centered large rounded image" src="http://shuao23.github.io/images/shapeshifter_edges.png">
