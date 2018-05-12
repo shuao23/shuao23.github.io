@@ -162,15 +162,18 @@ fixed4 frag (v2f i) : SV_Target
 
 <h2>Conclusion</h2>
 
+
+
+<p>
+  Developing Shape Shifter for my personal summer project was a good experience for me. I was able to learn the whole process of creating and publishing a game. Additionally I gave myself a deadline to finish before the summer ends. This gave me the motivation to complete the summer project. When working on projects, it is easy to overload the project with unrealistic expectations. However, by setting a solid deadline and through rapid prototyping, I was able create a fun mobile game on time.
+</p>
+
+<p style="text-align: right;">
+  Shape Shifter is on the <a href="https://play.google.com/store/apps/details?id=com.Azuligno.ShapeShifter" target="_blank">Google Play Store >></a>
+</p>
+
 <div class="paragraph">
   <img class="ui fluid rounded image" src="/images/shapeshifter_banner.png">
 </div>
 
-<p>
-  The development of Shape Shifter can be split into three different parts
-</p>
-
-<p>
-The Android game can be seen at the <a href="https://play.google.com/store/apps/details?id=com.Azuligno.ShapeShifter" target="_blank">Google Play Store</a>.
-</p>
 
