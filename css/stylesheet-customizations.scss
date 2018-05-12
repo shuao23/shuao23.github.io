@@ -20,3 +20,56 @@ body {
   // color: silver;
 }
 
+.horizontal.images{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontal.images .image{
+  width: auto;
+  max-height: 300px; 
+  margin-right: 10px;
+}
+
+.horizontal.images .image:last-child{
+  margin-right: 0;
+}
+
+.horizontal.mini.images .image{
+  max-height: 35px;
+}
+
+.horizontal.tiny.images .image{ 
+  max-height: 80px;
+}
+
+.horizontal.small.images .image{
+  max-height: 150px;
+}
+
+.horizontal.mediumsmall.images .image{
+  max-height: 225px;
+}
+
+.horizontal.medium.images .image{
+  max-height: 300px;
+}
+
+.horizontal.large.images .image{
+  max-height: 450px;
+}
+
+.horizontal.big.images .image{
+  max-height: 600px;
+}
+
+.horizontal.huge.images .image{
+  max-height: 800px;
+}
+
+.horizontal.massive.images .image{
+  max-height: 960px;
+}
