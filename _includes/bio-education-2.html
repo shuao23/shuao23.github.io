@@ -11,11 +11,19 @@
     <p class="ui no-bottom">{{ entry.studyType }}, {{ entry.area }}</p>
     <p class="ui no-bottom">GPA: <b>{{ entry.gpa }}</b>/{{entry.maxGpa}}, Major GPA: <b>{{ entry.majorGpa }}</b>/{{entry.maxGpa}}</p>
     {% if entry.courses %}
-      <ul style="margin: 0px;">
-        {% for course in entry.courses %}
-          <li>{{ course }}</li>
-        {% endfor %}
-      </ul>
+      <div class="ui accordion">
+        <div class="title">
+          <i class="dropdown icon"></i>
+          Relevant Courses Taken
+        </div>
+        <div class="content">
+          <ul style="margin: 0px;">
+            {% for course in entry.courses %}
+              <li>{{ course }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     {% endif %}
   </div>
   <div class="four wide right aligned column no-bottom">
