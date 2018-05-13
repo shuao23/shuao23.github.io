@@ -10,6 +10,7 @@ labels:
   - Unity3D
   - C#
   - Game Development
+  - Summer Project
 summary: A personal summer project to develop an android game on Unity3d. 
 ---
 <div class="player-container-16-9">
