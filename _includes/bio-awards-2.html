@@ -10,39 +10,45 @@
   {% endif %}
 {% endfor %}
 
+
 {% if hasGrant %}
-  <div class="sixteen wide column no-bottom">
+  <div class="sixteen wide column no-bottom" style="padding-bottom: 0!important;">
     <h3 class="ui left aligned header no-bottom">Grant Support</h3>
     <hr style="margin: 0px;">
   </div>
 
   <div class="sixteen wide column no-bottom">
-    {% for entry in site.data.bio.awards %}
-      {% if entry.type == "grant" %}
-        <p class="ui no-bottom">
-          <b>{{ entry.title }}</b>, {{ entry.awarder }}{% if entry.date %}, {{ entry.date }}{% endif %}
-        </p>
-        <p class="ui">{{ entry.summary }}</p>
-      {% endif %}
-    {% endfor %}
-  </div>
+    <div style="padding-left: 1rem;">
+      {% for entry in site.data.bio.awards %}
+        {% if entry.type == "grant" %}
+          <p class="ui no-bottom">
+            <b>{{ entry.title }}</b> - <em>{{ entry.awarder }}{% if entry.date %}, {{ entry.date }}{% endif %}</em>
+          </p>
+          <p class="ui">{{ entry.summary }}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>  
 {% endif %}
 
 {% if hasNonGrant %}
-  <div class="sixteen wide column no-bottom">
+  <div class="sixteen wide column no-bottom" style="padding-bottom: 0!important;">
     <h3 class="ui left aligned header no-bottom">Awards and Honors</h3>
     <hr style="margin: 0px;">
   </div>
 
+
   <div class="sixteen wide column no-bottom">
-    {% for entry in site.data.bio.awards %}
-      {% if entry.type != "grant" %}
-        <p class="ui no-bottom">
-          <b>{{ entry.title }}</b>, {{ entry.awarder }}, {{ entry.date }}
-        </p>
-        <p class="ui">{{ entry.summary }}</p>
-      {% endif %}
-    {% endfor %}
+    <div style="padding-left: 1rem;">
+      {% for entry in site.data.bio.awards %}
+        {% if entry.type != "grant" %}
+          <p class="ui no-bottom">
+            <b>{{ entry.title }} - {{ entry.awarder }}</b>, <em>{{ entry.date }}</em>
+          </p>
+          <p class="ui">{{ entry.summary }}</p>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 {% endif %}
 

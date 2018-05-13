@@ -1,22 +1,24 @@
 <!-- Used by theme-bio-builtin-2 -->
 
 {% if site.data.bio.volunteer %}
-<div class="sixteen wide column no-bottom">
-  <h3 class="ui left aligned header no-bottom">Professional Activities</h3>
+<div class="sixteen wide column no-bottom" style="padding-bottom: 0!important;">
+  <h3 class="ui left aligned header no-bottom" style="padding-bottom: 0!important;">Professional Activities</h3>
   <hr style="margin: 0px;">
 </div>
 
 {% for entry in site.data.bio.volunteer %}
-  <div class="twelve wide column no-bottom">
-    <p class="ui no-bottom">
-      <b>
-      {{ entry.position }}{% if entry.organization and (entry.organization != "") %}, {{ entry.organization }}{% endif %}
-      </b>
-    </p>
-    <p class="ui no-bottom"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
+  <div class="twelve wide column no-bottom" style="padding-bottom: 0!important;">
+    <div style="padding-left: 1rem;">
+      <p class="ui no-bottom" style="padding-bottom: 0!important;">
+        <b>
+        {{ entry.position }}{% if entry.organization and (entry.organization != "") %}, {{ entry.organization }}{% endif %}
+        </b>
+      </p>
+      <p class="ui no-bottom" style="padding-bottom: 0!important;"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
+      </div>
   </div>
-  <div class="four wide right aligned column no-bottom">
-    <p class="ui no-bottom"><b>
+  <div class="four wide right aligned column no-bottom" style="padding-bottom: 0!important;">
+    <p class="ui no-bottom" style="padding-bottom: 0!important;"><b>
       {% if entry.startDate %}
         {{ entry.startDate | slice: 0,4 }}
       {% endif %}
@@ -33,15 +35,17 @@
     </b></p>
   </div>
 
-  <div style="padding-top: 0px;" class="sixteen wide column no-bottom">
-    <p class="ui no-bottom">{{ entry.summary }}</p>
-    {% if entry.highlights %}
-      <ul style="margin: 0px;">
-        {% for highlight in entry.highlights %}
-          <li>{{ highlight }}</li>
-        {% endfor %}
-      </ul>
-    {% endif %}
+  <div class="sixteen wide column no-bottom" style="padding-bottom: 0!important; padding-top: 0px!important;" >
+    <div style="padding-left: 1rem;">
+      <p class="ui no-bottom" style="padding-bottom: 0!important;">{{ entry.summary }}</p>
+      {% if entry.highlights %}
+        <ul style="margin: 0px;">
+          {% for highlight in entry.highlights %}
+            <li>{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      </div>
   </div>
 {% endfor %}
 {% endif %}

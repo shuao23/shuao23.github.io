@@ -1,30 +1,33 @@
 <!-- Used by theme-bio-builtin-2 -->
 
-<div class="sixteen wide column no-bottom">
+<div class="sixteen wide column no-bottom" style="padding-bottom: 0!important;">
   <h3 class="ui left aligned header no-bottom">Education</h3>
   <hr style="margin: 0px;">
 </div>
 
+
 {% for entry in site.data.bio.education %}
   <div class="twelve wide column no-bottom">
-    <p class="ui no-bottom"><b>{{ entry.institution }}</b></p>
-    <p class="ui no-bottom">{{ entry.studyType }}, {{ entry.area }}</p>
-    <p class="ui no-bottom">GPA: <b>{{ entry.gpa }}</b>/{{entry.maxGpa}}, Major GPA: <b>{{ entry.majorGpa }}</b>/{{entry.maxGpa}}</p>
-    {% if entry.courses %}
-      <div class="ui accordion">
-        <div class="title">
-          <i class="dropdown icon"></i>
-          Relevant Courses Taken
+    <div style="padding-left: 1rem;">
+      <p class="ui no-bottom"><b>{{ entry.institution }}</b></p>
+      <p class="ui no-bottom">{{ entry.studyType }}, {{ entry.area }}</p>
+      <p class="ui no-bottom">GPA: <b>{{ entry.gpa }}</b>/{{entry.maxGpa}}, Major GPA: <b>{{ entry.majorGpa }}</b>/{{entry.maxGpa}}</p>
+      {% if entry.courses %}
+        <div class="ui accordion">
+          <div class="title">
+            <i class="dropdown icon"></i>
+            Relevant Courses Taken
+          </div>
+          <div class="content">
+            <ul style="margin: 0px;">
+              {% for course in entry.courses %}
+                <li>{{ course }}</li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
-        <div class="content">
-          <ul style="margin: 0px;">
-            {% for course in entry.courses %}
-              <li>{{ course }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    {% endif %}
+      {% endif %}
+    </div>
   </div>
   <div class="four wide right aligned column no-bottom">
     <p class="ui no-bottom"><b>
@@ -42,4 +45,5 @@
     </b></p>
   </div>
 {% endfor %}
+
 

@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/alexa_banner.png
+image: images/banner_500px/alexa_banner.png
 title: Project Alexa [WIP]
 permalink: projects/alexa
 # All dates must be YYYY-MM-DD format!

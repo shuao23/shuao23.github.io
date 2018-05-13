@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/biit_banner.png
+image: images/banner_500px/biit_banner.png
 title: bIIT [WIP]
 permalink: projects/biit
 # All dates must be YYYY-MM-DD format!

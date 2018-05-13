@@ -117,9 +117,48 @@
       ]
     }
   ],
-  "work": [
-  ],
   "volunteer": [
+    {
+      "organization": "Virtual IIT with Beacon Technology",
+      "website": "",
+      "position": "Software Engineer",
+      "startDate": "2017",
+      "endDate": "",
+      "summary": "Lead developer for beacon technology project",
+      "highlights": [
+        "Participated in discussions on how to integrate beacon technology to a campus setting",
+        "Researched how Bluetooth Low Energy (BLE) works and the protocols used during communication",
+        "Developed bIIT, an android application, to detect nearby BLE beacons, to notify the user with relevant notifications dependent on the beacon, and to display nearby beacons on a campus map based on the filter set by the user",
+        "Integrated 3rd party APIs to add additional features such as displaying a versatile campus map",
+        "Designed the necessary icons, and the user interface layout of the application"
+      ]
+    },
+    {
+      "organization": "Shape Shifter",
+      "website": "",
+      "position": "Game Developer",
+      "startDate": "2016",
+      "endDate": "",
+      "summary": "Developer for Android game, Shape Shifter",
+      "highlights": [
+        "Single handedly developed Shape Shifter, a mobile android game, and published on Google Play",
+        "Integrated Google Play services to display user data such as local and global high scores",
+        "Wrote a custom, mobile friendly shader to simplify lighting; written in C for Graphics (Cg)"
+      ]
+    },
+    {
+      "organization": "SATOK Hawaii Photography",
+      "website": "",
+      "position": "Photography Editor",
+      "startDate": "2014",
+      "endDate": "",
+      "summary": "Editor and photo organizer",
+      "highlights": [
+        "Organized and flagged photos by the quality of the shot",
+        "Edited wedding photos (color adjustment, cropping, straightening, spot removing) in Adobe Lighthouse",
+        "Printed photos to use in albums"
+      ]
+    }
   ],
   "awards": [
     {
