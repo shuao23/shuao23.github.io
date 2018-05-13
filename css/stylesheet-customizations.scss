@@ -31,11 +31,8 @@ body {
 .horizontal.images .image{
   width: auto;
   max-height: 300px; 
-  margin-right: 10px;
-}
-
-.horizontal.images .image:last-child{
-  margin-right: 0;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
 .horizontal.mini.images .image{

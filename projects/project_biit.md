@@ -2,10 +2,10 @@
 layout: project
 type: project
 image: images/biit_banner.png
-title: bIIT
+title: bIIT [WIP]
 permalink: projects/biit
 # All dates must be YYYY-MM-DD format!
-date: 2017-08-00
+date: "2017-08-20"
 labels:
   - Android
   - Java
@@ -13,3 +13,5 @@ labels:
   - Beacons
 summary: A school project to explore the use of BLE beacons for a school setting
 ---
+
+WIP
