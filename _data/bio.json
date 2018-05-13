@@ -52,6 +52,8 @@
     {
       "name": "web development",
       "keywords": [
+        "HTML/CSS",
+        "javascript",
       ]
     },
     {
@@ -78,7 +80,8 @@
         "Java",
         "Assembly",
         "Javascript",
-        "Python"
+        "Python",
+        "HTML/CSS"
       ]
     },
     {
@@ -90,6 +93,14 @@
         "Git/GitHub",
         "Adobe Creative Suite",
         "Android Studio"
+      ]
+    },
+    {
+      "name": "Languages",
+      "level": "",
+      "keywords": [
+        "English (Fluent)",
+        "Japanese (Fluent)"
       ]
     }
   ],
@@ -120,7 +131,7 @@
   "volunteer": [
     {
       "organization": "Virtual IIT with Beacon Technology",
-      "website": "",
+      "website": "https://shuao23.github.io/projects/biit",
       "position": "Software Engineer",
       "startDate": "2017",
       "endDate": "",
@@ -135,7 +146,7 @@
     },
     {
       "organization": "Shape Shifter",
-      "website": "",
+      "website": "https://shuao23.github.io/projects/shapeshifter",
       "position": "Game Developer",
       "startDate": "2016",
       "endDate": "",

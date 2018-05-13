@@ -1,0 +1,28 @@
+<!-- Used by theme-bio-builtin-1 -->
+
+{% if site.data.bio.skills %}
+  <div class="sixteen wide column no-bottom" style="padding-bottom: 0!important;">
+    <h3 class="ui left aligned header no-bottom" style="padding-bottom: 0!important;">Skills</h3>
+    <hr style="margin: 0px;">
+  </div>
+
+  {% for entry in site.data.bio.skills %}
+    <div class="sixteen wide column no-bottom" style="padding-bottom: 0!important;"></div>
+
+    <div class="ui row" style="padding: 0 1rem!important;">
+      <div class="four wide column" style="padding: 0 0 0 1rem!important;">
+          <p class="ui no-bottom" style="padding-bottom: 0!important;">
+            <b>{{ entry.name }}:</b>
+          </p>
+      </div>
+
+      <div class="twelve wide column" style="padding: 0 0 0 1rem!important;">
+        <p class="ui no-bottom" style="padding-bottom: 0!important;">
+          {% for keyword in entry.keywords %}
+            {{ keyword }}{% if forloop.last != true %}, {% endif %}
+          {% endfor %}
+        </p>
+      </div>
+    </div>
+  {% endfor %}    
+{% endif %}

@@ -1,0 +1,22 @@
+<!-- Used by theme-bio-builtin-1 -->
+
+{% if site.data.bio.interests %}
+<div class="sixteen wide column no-bottom" style="padding-bottom: 0!important;">
+    <h3 class="ui left aligned header no-bottom">Interests</h3>
+    <hr style="margin: 0px;">
+</div>
+
+<div class="sixteen wide column no-bottom">
+  <div style="padding-left: 1rem;">
+    <ui>
+      {% for entry in site.data.bio.interests %}
+      <li>
+        {{ entry.name }}
+        <!-- Unfortunately the following must all be on a single line so that there are no spaces before the commas. -->
+        {% if entry.keywords and entry.keywords.size > 0 %} - <em>{% for keyword in entry.keywords %}{{ keyword }}{% if forloop.last != true %}, {% endif %}{% endfor %}</em>{% endif %}
+      </li>
+      {% endfor %}
+    </ui>
+  </div>
+</div>
+{% endif %}
