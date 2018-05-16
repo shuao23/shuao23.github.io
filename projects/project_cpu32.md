@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/banner_500px/cpu32_banner.png
+image: images/project-cover/large/cpu32_banner.png
 title:  Design and Synthesis of CPUs [WIP]
 permalink: projects/cpu32
 # All dates must be YYYY-MM-DD format!

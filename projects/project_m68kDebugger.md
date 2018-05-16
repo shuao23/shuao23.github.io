@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/banner_500px/m68kDebugger_banner.png
+image: images/project-cover/large/m68kDebugger_banner.png
 title:  Debugger Design Project [WIP]
 permalink: projects/m68kDebugger
 # All dates must be YYYY-MM-DD format!

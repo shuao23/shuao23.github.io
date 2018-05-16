@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/banner_500px/shapeshifter_banner.png
+image: images/project-cover/large/shapeshifter_banner.png
 title: Shape Shifter
 permalink: projects/shapeshifter
 # All dates must be YYYY-MM-DD format!
@@ -31,8 +31,8 @@ Shape Shifter is an Android game built with Unity3D in C#. The game was one of m
 </p>
 
 <div class="horizontal mediumSmall images">
-    <img class="ui rounded image" src="/images/shapeshifter_prototype1.jpg" tittle="Color Balance Prototype">
-    <img class="ui rounded image" src="/images/shapeshifter_prototype2.jpg" tittle="Monkey Climb Prototype">
+    <img class="ui rounded image" src="/images/shape-shifter/prototype-1.jpg" tittle="Color Balance Prototype">
+    <img class="ui rounded image" src="/images/shape-shifter/prototype-2.jpg" tittle="Monkey Climb Prototype">
 </div>  
 <div class="image-caption paragraph">Screenshots of the prototypes for Color Balance and Monkey Climb</div>
 
@@ -57,7 +57,7 @@ Shape Shifter is an Android game built with Unity3D in C#. The game was one of m
 <h2>Development</h2>
 
 <div class="paragraph">
-  <img class="ui centered large rounded image" src="/images/shapeshifter_mainmenu.png">
+  <img class="ui centered large rounded image" src="/images/shape-shifter/main-menu.png">
 </div>
 
 <p>
@@ -86,7 +86,7 @@ public Vector3 GetVertexPos(float shapeSides, int vertexIdx) {
 <div class="ui hidden divider"></div>
 
 <div class="paragraph">
-  <img class="ui centered large rounded image" src="/images/shapeshifter_edges.png">
+  <img class="ui centered large rounded image" src="/images/shape-shifter/edges.png">
   <div class="image-caption">The edges used in Shape Shifter, rendered in Blender</div>
 </div>
 
@@ -97,7 +97,7 @@ public Vector3 GetVertexPos(float shapeSides, int vertexIdx) {
 <div class="ui hidden divider"></div>
 
 <div class="paragraph">
-  <img class="ui centered large rounded image" src="/images/shapeshifter_gameplay.png">
+  <img class="ui centered large rounded image" src="/images/shape-shifter/gameplay.png">
 </div>
 
 <p>
@@ -142,7 +142,7 @@ fixed4 frag (v2f i) : SV_Target
 </h3>
 
 <div class="paragraph">
-  <img class="ui centered large rounded image" src="/images/shapeshifter_highscore.png">
+  <img class="ui centered large rounded image" src="/images/shape-shifter/highscore.png">
   <div class="image-caption">Scoreboard in Shape Shifter</div>
 </div>
 
@@ -172,7 +172,7 @@ fixed4 frag (v2f i) : SV_Target
 </p>
 
 <div class="paragraph">
-  <img class="ui fluid rounded image" src="/images/shapeshifter_banner.png">
+  <img class="ui fluid rounded image" src="/images/shape-shifter/cover-photo.png">
 </div>
 
 

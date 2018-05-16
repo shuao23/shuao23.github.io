@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/banner_500px/alexa_banner.png
+image: images/project-cover/large/alexa_banner.png
 title: Project Alexa [WIP]
 permalink: projects/alexa
 # All dates must be YYYY-MM-DD format!
@@ -11,7 +11,7 @@ labels:
   - C#
   - Game Development
   - Summer Project
-summary: A summer project to create 3d sword combat game
+summary: A summer project to create a 3d sword combat game
 ---
 
 WIP
