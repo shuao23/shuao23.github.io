@@ -9,7 +9,7 @@ date: "2018-03-25"
 labels:
   - Verilog
   - Virtuoso
-summary: A school project to design and synthesis of a simple 32 bit CPU
+summary: A integrated circuit layout of a simple 32 bit CPU implemented in Verilog 
 ---
 
 WIP

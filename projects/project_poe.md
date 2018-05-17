@@ -10,7 +10,7 @@ labels:
   - web development
   - HTML/CSS
   - javascript
-summary: A school project to explore the use of power over ethernet
+summary: An inter-professional projects program to explore the benefits of power over ethernet 
 ---
 
 WIP

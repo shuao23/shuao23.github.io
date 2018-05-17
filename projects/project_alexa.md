@@ -1,6 +1,7 @@
 ---
 layout: project
-type: project
+type: project_ranked
+importance: 9.5
 image: images/project-cover/large/alexa_banner.png
 title: Project Alexa [WIP]
 permalink: projects/alexa
@@ -11,7 +12,7 @@ labels:
   - C#
   - Game Development
   - Summer Project
-summary: A summer project to create a 3d sword combat game
+summary: A 3d sword combat game prototype to learn the development process of a video game
 ---
 
 WIP

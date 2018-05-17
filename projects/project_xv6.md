@@ -10,7 +10,7 @@ labels:
   - low-level programming
   - C
   - OS
-summary: A school project to extend the features of xv6, a bare-bones operating system 
+summary: A project to extend the features of xv6, a bare-bones operating system 
 ---
 
 WIP

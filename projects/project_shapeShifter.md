@@ -1,6 +1,7 @@
 ---
 layout: project
-type: project
+type: project_ranked
+importance: 10
 image: images/project-cover/large/shapeshifter_banner.png
 title: Shape Shifter
 permalink: projects/shapeshifter
