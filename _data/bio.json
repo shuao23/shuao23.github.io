@@ -53,20 +53,27 @@
       "name": "web development",
       "keywords": [
         "HTML/CSS",
-        "javascript",
+        "javascript"
       ]
     },
     {
       "name": "graphic design",
       "keywords": [
-        "Photoshop",
-        "Illustrator"
+        "Adobe Photoshop",
+        "Adobe Illustrator"
       ]
     },
     {
       "name": "video editing",
       "keywords": [
-        "Premiere Pro"
+        "Adobe Premiere Pro"
+      ]
+    },
+    {
+      "name": "photo editing",
+      "keywords": [
+        "Adobe Photoshop",
+        "Adobe Lighthouse"
       ]
     }
   ],

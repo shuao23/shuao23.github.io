@@ -14,11 +14,11 @@
       <p class="ui no-bottom">GPA: <b>{{ entry.gpa }}</b>/{{entry.maxGpa}}, Major GPA: <b>{{ entry.majorGpa }}</b>/{{entry.maxGpa}}</p>
       {% if entry.courses %}
         <div class="ui accordion">
-          <div class="title">
+          <div class="title active">
             <i class="dropdown icon"></i>
             Relevant Courses Taken
           </div>
-          <div class="content">
+          <div class="content active">
             <ul style="margin: 0px;">
               {% for course in entry.courses %}
                 <li>{{ course }}</li>
@@ -29,6 +29,7 @@
       {% endif %}
     </div>
   </div>
+  
   <div class="four wide right aligned column no-bottom">
     <p class="ui no-bottom"><b>
       {% if entry.startDate %}

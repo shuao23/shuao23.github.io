@@ -6,33 +6,37 @@
   <hr style="margin: 0px;">
 </div>
 
+<div class="sixteen wide column no-bottom" style="padding-bottom: 0!important;"></div>
+
 {% for entry in site.data.bio.volunteer %}
-  <div class="twelve wide column no-bottom" style="padding-bottom: 0!important;">
-    <div style="padding-left: 1rem;">
-      <p class="ui no-bottom" style="padding-bottom: 0!important;">
-        <b>
-        {{ entry.position }}{% if entry.organization and (entry.organization != "") %}, {{ entry.organization }}{% endif %}
-        </b>
-      </p>
-      <p class="ui no-bottom" style="padding-bottom: 0!important;"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
-      </div>
-  </div>
-  <div class="four wide right aligned column no-bottom" style="padding-bottom: 0!important;">
-    <p class="ui no-bottom" style="padding-bottom: 0!important;"><b>
-      {% if entry.startDate %}
-        {{ entry.startDate | slice: 0,4 }}
-      {% endif %}
-      {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
-        -
-      {% endif %}
-      {% if entry.endDate %}
-        {% if entry.endDate != "Present" %}
-          {{ entry.endDate | slice: 0,4 }}
-         {% else %}
-          {{ entry.endDate }}
+  <div class="ui row" style="padding: 0;">
+    <div class="twelve wide column no-bottom" style="padding: 0 1rem!important;">
+      <div style="padding-left: 1rem;">
+        <p class="ui no-bottom" style="padding-bottom: 0!important;">
+          <b>
+          {{ entry.position }}{% if entry.organization and (entry.organization != "") %}, {{ entry.organization }}{% endif %}
+          </b>
+        </p>
+        <p class="ui no-bottom" style="padding-bottom: 0!important;"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
+        </div>
+    </div>
+    <div class="four wide right aligned column no-bottom" style="padding: 0 1rem!important;">
+      <p class="ui no-bottom" style="padding-bottom: 0!important;"><b>
+        {% if entry.startDate %}
+          {{ entry.startDate | slice: 0,4 }}
         {% endif %}
-      {% endif %}
-    </b></p>
+        {% if entry.startDate and entry.startDate != '' and entry.endDate and entry.endDate != '' %}
+          -
+        {% endif %}
+        {% if entry.endDate %}
+          {% if entry.endDate != "Present" %}
+            {{ entry.endDate | slice: 0,4 }}
+          {% else %}
+            {{ entry.endDate }}
+          {% endif %}
+        {% endif %}
+      </b></p>
+    </div>
   </div>
 
   <div class="sixteen wide column no-bottom" style="padding-bottom: 0!important; padding-top: 0px!important;" >
@@ -47,5 +51,9 @@
       {% endif %}
       </div>
   </div>
+
+  {% if forloop.last != true %}
+    <div class="sixteen wide column no no-bottom"></div>
+  {% endif %}  
 {% endfor %}
 {% endif %}
