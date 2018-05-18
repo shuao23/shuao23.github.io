@@ -21,14 +21,14 @@
           <div class="three wide center aligned column">
             <h4 class="ui inverted header">More About Me</h4>
             <div class="ui inverted link list">
-              <a class="item" href="/projects">Projects</a>
-              <a class="item" href="/essays">Posts</a>
-              <a class="item" href="/bio">Resume</a>
+              <a class="{% if page.url == "/projects/" %}active {% endif %}item" href="/projects">Projects</a>
+              <a class="{% if page.url == "/essays/" %}active {% endif %}item" href="/essays">Posts</a>
+              <a class="{% if page.url == "/bio/" %}active {% endif %}item" href="/bio">Resume</a>
             </div>
           </div>
           
           <div class="three wide center aligned column">
-            <h4 class="ui inverted header">Contact Me</h4>
+            <h4 class="ui inverted header">Contact Info</h4>
             <div class="ui inverted link list">
               {% if site.data.bio.basics.email %}
                 <a href="mailto:{{ site.data.bio.basics.email }}" class="item"><i class="mail outline icon"></i> e-mail</a>
