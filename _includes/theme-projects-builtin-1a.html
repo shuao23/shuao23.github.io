@@ -1,11 +1,10 @@
 <!-- Like theme-projects-builtin-1, but uses project-card-2.html (i.e. entire card is a link). -->
 
 <div style="padding-top: 2rem;" class="ui container">
-  <!--
-  <h2 class="ui horizontal divider header" style="padding: 1rem 0 1rem 0">
-      Projects
+  
+  <h2 class="ui horizontal divider header" style="margin: 1rem 0 1rem 0">
+      Top Projects
   </h2>
-  -->
 
   <div class="ui stackable centered four cards" style="margin: 0;">
     {% assign project_pages = site.pages | where: "type", "project" |  sort: "rank" | reverse %}
