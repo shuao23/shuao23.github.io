@@ -12,7 +12,7 @@ labels:
 ---
 
 <div class="paragraph">
-  <img class="ui fluid rounded image" src="/images/shape-shifter/cover-photo.png">
+  <img class="ui huge centered rounded image" src="/images/shape-shifter/cover-photo.png">
 </div>
 
 <p>
@@ -27,7 +27,7 @@ Shape Shifter is an Android game built with Unity3D in C#. The game was one of m
   The project started off by brainstorming ideas on to a piece of paper and sketching out many concepts as possible. Some of the game concepts that made it into the prototyping stage are:
 </p>
 
-<div class="horizontal mediumSmall images">
+<div class="horizontal medium images">
     <img class="ui rounded image" src="/images/shape-shifter/prototype-1.jpg" tittle="Color Balance Prototype">
     <img class="ui rounded image" src="/images/shape-shifter/prototype-2.jpg" tittle="Monkey Climb Prototype">
 </div>  
@@ -54,7 +54,7 @@ Shape Shifter is an Android game built with Unity3D in C#. The game was one of m
 <h2>Development</h2>
 
 <div class="paragraph">
-  <img class="ui centered large rounded image" src="/images/shape-shifter/main-menu.png">
+  <img class="ui centered big rounded image" src="/images/shape-shifter/main-menu.png">
 </div>
 
 <p>
@@ -83,7 +83,7 @@ public Vector3 GetVertexPos(float shapeSides, int vertexIdx) {
 <div class="ui hidden divider"></div>
 
 <div class="paragraph">
-  <img class="ui centered large rounded image" src="/images/shape-shifter/edges.png">
+  <img class="ui centered big rounded image" src="/images/shape-shifter/edges.png">
   <div class="image-caption">The edges used in Shape Shifter, rendered in Blender</div>
 </div>
 
@@ -94,7 +94,7 @@ public Vector3 GetVertexPos(float shapeSides, int vertexIdx) {
 <div class="ui hidden divider"></div>
 
 <div class="paragraph">
-  <img class="ui centered large rounded image" src="/images/shape-shifter/gameplay.png">
+  <img class="ui centered big rounded image" src="/images/shape-shifter/gameplay.png">
 </div>
 
 <p>
@@ -139,7 +139,7 @@ fixed4 frag (v2f i) : SV_Target
 </h3>
 
 <div class="paragraph">
-  <img class="ui centered large rounded image" src="/images/shape-shifter/highscore.png">
+  <img class="ui centered big rounded image" src="/images/shape-shifter/highscore.png">
   <div class="image-caption">Scoreboard in Shape Shifter</div>
 </div>
 
@@ -162,6 +162,10 @@ fixed4 frag (v2f i) : SV_Target
 
 <p>
   Developing Shape Shifter for my personal summer project was a good experience for me. I was able to learn the whole process of creating and publishing a game. Additionally I gave myself a deadline to finish before the summer ends. This gave me the motivation to complete the summer project. When working on projects, it is easy to overload the project with unrealistic expectations. However, by setting a solid deadline and through rapid prototyping, I was able create a fun mobile game on time.
+</p>
+
+<p style="width: 100%; text-align: right; margin-top: 3rem;">
+ Goto <a href="/projects/shapeshifter">project overview</a>
 </p>
 
 
