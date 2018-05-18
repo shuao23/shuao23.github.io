@@ -1,23 +1,19 @@
 ---
-layout: project
-type: project
-rank: 10
-image: images/project-cover/large/shapeshifter_banner.png
-title: Shape Shifter
-permalink: projects/shapeshifter
+layout: essay
+type: essay
+title: The Development of Shape Shifter
 # All dates must be YYYY-MM-DD format!
-date: "2016-06-01" 
+date: "2018-05-12"
 labels:
   - Unity3D
   - C#
   - Game Development
   - Summer Project
-summary: A personal summer project to develop an android game on Unity3d. 
 ---
-<div class="player-container-16-9">
-  <iframe class="embedded-player" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/QfJwRI0-1ho?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<div class="paragraph">
+  <img class="ui fluid rounded image" src="/images/shape-shifter/cover-photo.png">
 </div>
-<div class="image-caption paragraph">Trailer showing the gameplay of Shape Shifter</div>
 
 <p>
 Shape Shifter is an Android game built with Unity3D in C#. The game was one of my personal projects during the summer of 2016. The project started off with brainstorming and creating as many game concepts on a piece of paper. After thinking of many ideas, the most interesting games were put into Unity as a prototype. The most entertaining prototype was a game where the player morphs into a triangle, square, pentagon, or a hexagon, to match the edges which flies towards the player. This game is now known as <i>Shape Shifter</i>. The purpose of this summer project was to experience the whole process of developing a game to publishing it to the <a href="https://play.google.com/store/apps/details?id=com.Azuligno.ShapeShifter" target="_blank">Google Play Store</a>. 
@@ -168,25 +164,7 @@ fixed4 frag (v2f i) : SV_Target
   Developing Shape Shifter for my personal summer project was a good experience for me. I was able to learn the whole process of creating and publishing a game. Additionally I gave myself a deadline to finish before the summer ends. This gave me the motivation to complete the summer project. When working on projects, it is easy to overload the project with unrealistic expectations. However, by setting a solid deadline and through rapid prototyping, I was able create a fun mobile game on time.
 </p>
 
-<p style="text-align: right;">
-  Shape Shifter is on the <a href="https://play.google.com/store/apps/details?id=com.Azuligno.ShapeShifter" target="_blank">Google Play Store</a>
-</p>
-
-<div class="paragraph">
-  <img class="ui fluid rounded image" src="/images/shape-shifter/cover-photo.png">
-</div>
 
 
-<h3>Resources</h3>
-  <ul>
-    <li>
-       <a href="/essays/development-of-shapeshifter.html">An in-depth look at the project</a>
-    </li>
-    <li>
-       <a href="https://play.google.com/store/apps/details?id=com.Azuligno.ShapeShifter" target="_blank">Google Play Store</a>
-    </li>
-    <li>
-      <a href="https://unity3d.com/" target="_blank">Unity3d</a>
-    </li>
-  </ul>
+
 

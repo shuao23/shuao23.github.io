@@ -1,7 +1,7 @@
 ---
 layout: project
-type: project_ranked
-importance: 9.5
+type: project
+rank: 9.5
 image: images/project-cover/large/alexa_banner.png
 title: Project Alexa [WIP]
 permalink: projects/alexa

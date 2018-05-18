@@ -1,5 +1,47 @@
 <!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
 
-<script>
-  $('.ui.embed').embed();
-</script>
+<div id="back-to-top">
+  <a href="#page-top">
+    <div><i class="grey arrow up icon"></i> Back to Top</div> 
+  </a>
+</div>
+<div class="ui inverted vertical footer segment" style="background-color: #555;">
+    <div class="ui center aligned container" style="margin-top: 1rem;">
+      <div class="ui stackable grid">
+        <div class="sixteen wide column"></div>
+
+        <div class="fourteen column centered row">
+          <div class="eight wide left aligned column">
+              <h3 class="ui inverted header">{{ site.data.bio.basics.name }}</h2>
+              <p class="">
+                {{ site.data.bio.basics.summary }}
+              </p>
+          </div>
+          <div class="three wide center aligned column">
+            <h4 class="ui inverted header">More About Me</h4>
+            <div class="ui inverted link list">
+              <a class="item" href="/projects">Projects</a>
+              <a class="item" href="/essays">Posts</a>
+              <a class="item" href="/bio">Resume</a>
+            </div>
+          </div>
+          
+          <div class="three wide center aligned column">
+            <h4 class="ui inverted header">Contact Me</h4>
+            <div class="ui inverted link list">
+              {% if site.data.bio.basics.email %}
+                <a href="mailto:{{ site.data.bio.basics.email }}" class="item"><i class="mail outline icon"></i> e-mail</a>
+              {% endif %}
+
+              {% for entry in site.data.bio.basics.profiles %}
+                <a href="{{ entry.url }}" class="item"><i class="{{ entry.network | downcase }} icon "></i> {{ entry.username }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui inverted divider"></div>
+      
+      <p>© Copyright {{ site.time | date: '%Y' }} Shuhei Aoki. All rights reserved.</p>
+    </div>
+  </div>

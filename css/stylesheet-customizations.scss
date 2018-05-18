@@ -95,3 +95,44 @@ iframe.embedded-player{
 .paragraph{
   margin-bottom: 1em;
 }
+
+#back-to-top{
+  margin-top: 4rem; 
+  width: 100%;
+}
+
+#back-to-top a{
+  width: 100%;
+  text-align: center;
+}
+
+#back-to-top div{
+  width: 100%; 
+  color: black;
+  background-color: #dadada; 
+  transition: .1s background-color ease;
+  padding: 1rem 0;   
+  border-top: 1px solid rgba(34,36,38,.15);
+  box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+}
+
+#back-to-top div:hover{
+  background-color: #bbb; 
+}
+
+.essay-title{
+  color: grey;
+  transition: .1s color ease;
+}
+
+.essay-title > a{
+  color: inherit;
+}
+
+.essay-title:hover{
+  color: black;
+}
+
+.essay-content {
+  color: inherit;
+}

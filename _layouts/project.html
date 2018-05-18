@@ -3,6 +3,14 @@ layout: projects
 ---
 
 <div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
- <h1>{{ page.title }}</h1>
+  <h1 class="no-bottom">{{ page.title }}</h1>
+  {% if page.subtitle %}
+    <p class="no-bottom"><em>{{ page.subtitle }}</em></p>
+  {% endif %}
+  <div class="ui mini labels" style="margin-bottom: 1em;">
+    {% for label in page.labels %}
+      <div class="ui basic label">{{ label }}</div>
+    {% endfor %}
+  </div>
  {{ content }}
 </div>

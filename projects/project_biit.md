@@ -1,9 +1,10 @@
 ---
 layout: project
-type: project_ranked
-importance: 9
+type: project
+rank: 9
 image: images/project-cover/large/biit_banner.png
-title: bIIT
+title: bIIT [WIP]
+subtitle: Enabling Virtual Illinois Tech with Beacon Technology
 permalink: projects/biit
 # All dates must be YYYY-MM-DD format!
 date: "2017-08-20"
@@ -14,11 +15,6 @@ labels:
   - Beacons
 summary: An inter-professional projects program to explore the use of BLE beacons for a school setting
 ---
-
-<p>
-  <em>Enabling Virtual Illinois Tech with Beacon Technology</em>
-</p>
-
 
 <div class="paragraph">
   <img class="ui fluid rounded image" src="/images/biit/poster.png">

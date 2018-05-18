@@ -4,8 +4,13 @@
   {% include head.html %}
 
   <body>
+    <a id="page-top"></a>
+
     {{ content }}
-    {% include footer.html %}
+
+    {%unless page.url == "/" %}
+      {% include footer.html %}
+    {% endunless %}
 
   </body>
 
