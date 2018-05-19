@@ -2,8 +2,9 @@
 layout: essay
 type: essay
 title: The Development of Shape Shifter
+permalink: essays/2018/05/16/development-of-shapeshifter
 # All dates must be YYYY-MM-DD format!
-date: "2018-05-12"
+date: "2018-05-16"
 labels:
   - Unity3D
   - C#
@@ -12,11 +13,13 @@ labels:
 ---
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/shape-shifter/cover-photo.png">
+  <img class="ui fluid centered rounded image" src="/images/shape-shifter/cover-photo.png">
 </div>
 
+<h2>Introduction</h2>
+
 <p>
-Shape Shifter is an Android game built with Unity3D in C#. The game was one of my personal projects during the summer of 2016. The project started off with brainstorming and creating as many game concepts on a piece of paper. After thinking of many ideas, the most interesting games were put into Unity as a prototype. The most entertaining prototype was a game where the player morphs into a triangle, square, pentagon, or a hexagon, to match the edges which flies towards the player. This game is now known as <i>Shape Shifter</i>. The purpose of this summer project was to experience the whole process of developing a game to publishing it to the <a href="https://play.google.com/store/apps/details?id=com.Azuligno.ShapeShifter" target="_blank">Google Play Store</a>. 
+  The development of Shape Shifter can be split into brainstorming/prototyping, coding, and publishing. In the brainstorming phase, I thought of many ideas for a fun and simple to play mobile game. The gameplay had to be simple for me to finish before the fixed deadline of the summer break. I had about 10 game ideas for the project and the most interesting ideas were chosen and a prototype was developed in Unity. After playing with the prototypes, I decided that Shape Shifter was the most entertaining and the second phase of the development began. During the coding phase, many of the code and the game mechanics were cleaned up. Lastly, the completed game was published to the Google Play Store. ss
 </p>
 
 <div class="ui section divider"></div>
@@ -165,10 +168,6 @@ fixed4 frag (v2f i) : SV_Target
 </p>
 
 <p style="width: 100%; text-align: right; margin-top: 3rem;">
- Go to <a href="/projects/shapeshifter">project overview</a>
+  Go to <a href="/projects/shapeshifter">project overview <i class="left arrow icon"></i></a>
 </p>
-
-
-
-
 

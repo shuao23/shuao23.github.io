@@ -12,5 +12,29 @@ layout: projects
       <div class="ui basic label">{{ label }}</div>
     {% endfor %}
   </div>
- {{ content }}
+  {{ content }}
+
+  <div class="ui section divider"></div>
+
+  <div class="ui equal width grid">
+    {% assign project_pages = site.pages | where: "type", "project" | where: "draft", nil %}
+    {% assign project_pages_ranked = project_pages | where_exp: "page", "page.rank != nil" |  sort: "rank" | reverse %}
+    {% assign project_pages_unranked = project_pages | where_exp: "page", "page.rank == nil" | sort: "date" | reverse %}
+    {% assign project_pages = project_pages_ranked | concat: project_pages_unranked %}
+
+    {% for pge in project_pages %}
+      {% if pge.url == page.url %}
+        {% assign prev_idx = forloop.index0 | minus: 1 %}
+        {% if prev_idx >= 0 %}
+          {% assign prev_page = project_pages[prev_idx] %}
+        {% endif %}
+        {% assign next_idx = forloop.index0 | plus: 1 %}
+        {% assign next_page = project_pages[next_idx] %}
+      {% endif %}
+    {% endfor %}
+
+    <div class="left aligned column"><a href="{{ prev_page.url }}">{% if prev_page %}<i class="ui left arrow icon"></i> Previous Project</a>{% endif %}</div>
+    <div class="center aligned column"><a href="/projects"><i class="ui home icon"></i> Back to Projects Page</a></div>
+    <div class="right aligned column">{% if next_page %}<a href="{{ next_page.url }}">Next Project <i class="ui right arrow icon"></i></a>{% endif %}</div>
+  </div>
 </div>
