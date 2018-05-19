@@ -17,7 +17,7 @@ layout: projects
   <div class="ui section divider"></div>
 
   <div class="ui equal width grid">
-    {% assign project_pages = site.pages | where: "type", "project" | where: "draft", nil %}
+    {% assign project_pages = site.pages | where: "type", "project" %}
     {% assign project_pages_ranked = project_pages | where_exp: "page", "page.rank != nil" |  sort: "rank" | reverse %}
     {% assign project_pages_unranked = project_pages | where_exp: "page", "page.rank == nil" | sort: "date" | reverse %}
     {% assign project_pages = project_pages_ranked | concat: project_pages_unranked %}
