@@ -11,7 +11,7 @@ layout: essays
   <div class="ui section divider"></div>
 
   <div class="ui equal width grid">
-    {% assign essay_pages = site.pages | where: "type", "essay" | where: "draft", nil %}
+    {% assign essay_pages = site.pages | where: "type", "essay" %}
 
     {% for pge in essay_pages %}
       {% if pge.url == page.url %}
