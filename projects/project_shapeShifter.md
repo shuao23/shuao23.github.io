@@ -2,9 +2,10 @@
 layout: project
 type: project
 rank: 10
-image: images/project-cover/large/shapeshifter_banner.png
+image: images/project-cover/large/shape-shifter-banner.png
 title: Shape Shifter
-permalink: projects/shapeshifter
+id: shape-shifter
+permalink: projects/shape-shifter
 # All dates must be YYYY-MM-DD format!
 date: "2016-06-01" 
 labels:

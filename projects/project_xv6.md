@@ -1,8 +1,9 @@
 ---
 layout: project
 type: project
-image: images/project-cover/large/xv6_banner.png
+image: images/project-cover/large/xv6-banner.png
 title:  Extending xv6 [WIP]
+id: xv6
 permalink: projects/xv6
 # All dates must be YYYY-MM-DD format!
 date: "2017-08-20"

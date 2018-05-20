@@ -1,9 +1,10 @@
 ---
 layout: project
 type: project
-image: images/project-cover/large/m68kDebugger_banner.png
+image: images/project-cover/large/m68k-debugger-banner.png
 title:  Debugger Design Project [WIP]
-permalink: projects/m68kDebugger
+id: m68k-debugger
+permalink: projects/m68k-debugger
 # All dates must be YYYY-MM-DD format!
 date: "2017-04-24"
 labels:

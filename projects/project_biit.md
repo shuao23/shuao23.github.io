@@ -2,9 +2,10 @@
 layout: project
 type: project
 rank: 9
-image: images/project-cover/large/biit_banner.png
+image: images/project-cover/large/biit-banner.png
 title: bIIT [WIP]
 subtitle: Enabling Virtual Illinois Tech with Beacon Technology
+id: biit
 permalink: projects/biit
 # All dates must be YYYY-MM-DD format!
 date: "2017-08-20"

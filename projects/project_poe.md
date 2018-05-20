@@ -1,8 +1,9 @@
 ---
 layout: project
 type: project
-image: images/project-cover/large/poe_banner.png
+image: images/project-cover/large/poe-banner.png
 title:  Power over Ethernet [WIP]
+id: poe
 permalink: projects/poe
 # All dates must be YYYY-MM-DD format!
 date: "2018-01-08"

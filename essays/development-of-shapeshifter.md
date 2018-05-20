@@ -9,7 +9,9 @@ labels:
   - Unity3D
   - C#
   - Game Development
-  - Summer Project
+  - Android Development
+  - Play Game Services
+  - Visual Studio
 ---
 
 <div class="paragraph">
@@ -19,7 +21,7 @@ labels:
 <h2>Introduction</h2>
 
 <p>
-  The development of Shape Shifter can be split into brainstorming/prototyping, coding, and publishing. In the brainstorming phase, I thought of many ideas for a fun and simple to play mobile game. The gameplay had to be simple for me to finish before the fixed deadline of the summer break. I had about 10 game ideas for the project and the most interesting ideas were chosen and a prototype was developed in Unity. After playing with the prototypes, I decided that Shape Shifter was the most entertaining and the second phase of the development began. During the coding phase, many of the code and the game mechanics were cleaned up. Lastly, the completed game was published to the Google Play Store. ss
+  The development of Shape Shifter can be split into brainstorming/prototyping, coding, and publishing. In the brainstorming phase, I thought of many ideas for a fun and simple to play mobile game. The gameplay had to be simple for me to finish before the fixed deadline of the summer break. I had about 10 game ideas for the project and the most interesting ideas were chosen and a prototype was developed in Unity. After playing with the prototypes, I decided that Shape Shifter was the most entertaining and the second phase of the development began. During the coding phase, many of the code and the game mechanics were cleaned up. Lastly, the completed game was published to the Google Play Store. 
 </p>
 
 <div class="ui section divider"></div>
