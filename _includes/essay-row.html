@@ -1,7 +1,7 @@
 <!-- Used by theme-essays-builtin-2 -->
 
 <div class="row" style="padding: 0.5rem 0!important;">
-    <div class="essay-card ten wide column essay-title" style="background-color: white; padding: 2rem!important; border-radius: .28571429rem; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)!important;">
+    <div class="essay-card ten wide column essay-title" id="{{ page.id }}" style="background-color: white; padding: 2rem!important; border-radius: .28571429rem; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)!important;">
       <a href="{{ site.baseurl}}{{ include.page.url }}">
         <h2 class="header essay-content">{{ include.page.title }}</h2>
         <p class="essay-content">{{ include.page.content | markdownify | strip_html | truncatewords: 40 }}</p>

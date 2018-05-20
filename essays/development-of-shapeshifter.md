@@ -2,6 +2,7 @@
 layout: essay
 type: essay
 title: The Development of Shape Shifter
+id: development-of-shapeshifter
 permalink: essays/2018/05/16/development-of-shapeshifter
 # All dates must be YYYY-MM-DD format!
 date: "2018-05-16"
