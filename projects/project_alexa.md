@@ -11,7 +11,7 @@ date: "2017-06-01"
 labels:
   - Unity3D
   - C#
-  - Game Development
+  - Game Development 
   - Game Design
   - Animation
   - Visual Studio
