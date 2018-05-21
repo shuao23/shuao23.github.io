@@ -171,6 +171,6 @@ fixed4 frag (v2f i) : SV_Target
 </p>
 
 <p style="width: 100%; text-align: right; margin-top: 3rem;">
-  Go to <a href="/projects/shapeshifter">project overview <i class="left arrow icon"></i></a>
+  Go to <a href="/projects/shape-shifter">project overview <i class="left arrow icon"></i></a>
 </p>
 

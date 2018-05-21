@@ -3,7 +3,7 @@ layout: project
 type: project
 rank: 9.5
 image: images/project-cover/large/alexa-banner.png
-title: Project Alexa [WIP]
+title: Project Alexa
 id: alexa
 permalink: projects/alexa
 # All dates must be YYYY-MM-DD format!
@@ -22,7 +22,7 @@ summary: A 3d sword combat game prototype to learn the development process of a 
   <iframe class="embedded-player" width="100%" height="100%" src="https://www.youtube.com/embed/WcDJb2y5SsE?rel=0&amp;start=39" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
-<h2>Project Summary</h2>
+<div class="ui hidden divider"></div>
 
 <p>
   The goal behind this project was to create a 3d game to challenge my programming skills that I have been working on over the last few years. The scope of the project was to create a playable technology demonstration of a 3rd person sword combat game. The gameplay of the game can be seen above. The objective of the game is to control the main character, Alexa to defeat the enemy character. The sword combat has a little twist in order to make the sword combat exciting and unique. Both the main character and the enemy has three attack variations of attack right, left, and heavy. These different attacks can be blocked with three block variations of block right, left, and heavy. The player needs to think about the direction of the enemy swing to block the attack. The members of the project consisted of <a href="https://andku23.github.io" target="_blank">Andrew Kurano</a> as the artist and programmer, and myself as the (lead) programmer. My responsibility as a programmer was to create a character controller, a camera system, and a simple AI for the enemy character. 

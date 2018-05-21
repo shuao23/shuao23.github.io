@@ -22,7 +22,7 @@ summary: An inter-professional projects program to explore the use of BLE beacon
 </div>
 
 <p>
-  test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test 
+  
 </p>
 
 <div class="ui section divider"></div>

@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: The Development of Project Alexa [wip]
+title: The Development of Project Alexa [WIP]
 id: development-of-alexa
 permalink: essays/2018/05/19/development-of-alexa
 # All dates must be YYYY-MM-DD format!
