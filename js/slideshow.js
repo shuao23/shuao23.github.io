@@ -93,14 +93,24 @@ function SlideShow($slideShow){
   }
 
   this.updateCaption = function(){
-    if(readmore){
+    var currentCap = childCaptions.eq(active);
+
+    if(currentCap.children().length == 0){
+      //If the contents of caption is empty
       gradient.removeClass("active");
-      childCaptions.eq(active).removeClass("collapsed");
-      moreButton.html("<i class=\"ui up arrow icon\"></i>Read Less");
+      moreButton.removeClass("active");
     }else{
       gradient.addClass("active");
-      childCaptions.eq(active).addClass("collapsed");
-      moreButton.html("<i class=\"ui down arrow icon\"></i>Read More");
+      moreButton.addClass("active");
+      if(readmore){
+        gradient.removeClass("active");
+        currentCap.removeClass("collapsed");
+        moreButton.html("<i class=\"ui up arrow icon\"></i>Read Less");
+      }else{
+        gradient.addClass("active");
+        currentCap.addClass("collapsed");
+        moreButton.html("<i class=\"ui down arrow icon\"></i>Read More");
+      }
     }
   }
 
@@ -108,17 +118,21 @@ function SlideShow($slideShow){
     this.reset();
     var ts = this;
 
-    //Initialize slide buttons
     $slideShow.find(".left.slide-navi").click(function(){
       ts.prevSlide();
     });
+
     $slideShow.find(".right.slide-navi").click(function(){
       ts.nextSlide();
     });
 
-    //Initialize previews
+    slides.click(function(){
+      ts.nextSlide();
+    });
+
     $slideShow.find(".slide-preview").click(function (){
       ts.chooseSlide($(this).index());
+      ts.updateFadeout();
     });
 
     $slideShow.find(".read-more").click(function (){

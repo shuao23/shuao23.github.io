@@ -1,25 +1,6 @@
 ---
 # Provide front matter so Jekyll processes this file as SASS.
 ---
-
-// Put your custom CSS here if you want to override the defaults.
-// Here are some common customizations for colors
-
-// Customize the background color
-body {
-  // background-color: #f2f2f2;;
-}
-
-// Customize the menubar color
-.ui.menu {
-  // background: $background-start;
-}
-
-// Customize the home page icon colors
-.icon-color {
-  // color: silver;
-}
-
 .horizontal.images{
   display: flex;
   flex-wrap: wrap;
@@ -179,12 +160,15 @@ iframe.embedded-player{
   visibility: visible;
 }
 
+div.slide-content{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .slide-content:not(.ref){
   position: absolute;
   transform: translateY(-50%);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .ref.slide-content{
@@ -221,7 +205,7 @@ iframe.embedded-player{
   padding-bottom: 1em;
 }
 
-.gradient{//========
+.gradient{
   display: none;
   position: relative;
   margin-top: -22px;
@@ -230,7 +214,7 @@ iframe.embedded-player{
   background: linear-gradient(0, lightgrey, rgba(lightgrey, 0.7), rgba(0,0,0,0));
 }
 
-.active.gradient{ //======
+.active.gradient{ 
   display: block;
 }
 
@@ -347,12 +331,12 @@ iframe.embedded-player{
   transition: 0.2s opacity ease;
 }
 
-.right.slide-navi-bkgnd{
-  background: linear-gradient(-90deg, black, rgba(0,0,0,0)); 
+.right .slide-navi-bkgnd{
+  background: linear-gradient(-90deg, rgba(0,0,0,0.9), rgba(0,0,0,0)); 
 }
 
-.left.slide-navi-bkgnd{
-  background: linear-gradient(90deg, black, rgba(0,0,0,0)); 
+.left .slide-navi-bkgnd{
+  background: linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0)); 
 }
 
 .slide-navi:hover .slide-navi-bkgnd{
@@ -363,10 +347,17 @@ iframe.embedded-player{
   position: relative;
   top: -50%;
   transform: translateY(-50%);
-  margin: 0 auto;
   width: fit-content;
   color: black;
   transition: 0.2s color ease;
+}
+
+.right .slide-navi-arrow{
+  margin: 0 15px 0 auto;
+}
+
+.left .slide-navi-arrow{
+  margin: 0 auto 0 15px;
 }
 
 .slide-navi:hover .slide-navi-arrow{
