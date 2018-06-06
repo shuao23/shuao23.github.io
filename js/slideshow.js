@@ -1,48 +1,26 @@
-$(function () {
-  
+$(function () { 
   $(".slide-show").each(function (){
     var $this = $(this);
-    var slideshow = new SlideShow(
-      $this.find(".slide-container"),
-      $this.find(".slide-previews"),
-      $this.find(".slide-captions")
-    );
-
-    //Initialize the slide show
-    slideshow.reset();
-
-    //Initialize slide buttons
-    $this.find(".left.slide-navi").click(function (){
-      slideshow.prevSlide();
-    });
-    $this.find(".right.slide-navi").click(function (){
-      slideshow.nextSlide();
-    });
-
-    //Initialize previews
-    $this.find(".slide-preview").click(function (){
-      slideshow.chooseSlide($(this).index());
-    });
-
-    //Vertically scroll the preview pane
-    $this.find(".slide-previews").on({
-      "mousewheel":function (event, delta) {
-        this.scrollLeft -= delta;
-        event.preventDefault();
-      }
-    });
+    var slideshow = new SlideShow($this);
+    slideshow.init();
   });
 });
 
-function SlideShow($slides, $slidePreviews, $slideCaptions){
-  var slides = $slides;
-  var slidePreviews = $slidePreviews;
-  var slideCaptions = $slideCaptions;
+function SlideShow($slideShow){
+  //Constants
+  var fadePadding = 15;
+  //Cache for preview fadeouts
+  var rightFadeout, leftFadeout;
+  //Cache for read more
+  var moreButton, gradient;
+  //Cache for parent containers
+  var slides, slidePreviews, slideCaptions;
+  //Cache for arrays of child elements
+  var childSlides, childPreviews, childCaptions;
+  //Cache for storing number of slides
+  var length;
 
-  var childSlides = $slides.children();
-  var childPreviews = $slidePreviews.children();
-  var childCaptions = $slideCaptions.children();
-  var length = childSlides.length;
+  var readmore = false;
   var active = 0;
 
 
@@ -69,26 +47,143 @@ function SlideShow($slides, $slidePreviews, $slideCaptions){
     childPreviews.eq(idx).addClass("active");
     childCaptions.eq(idx).addClass("active");
 
+    var previewElem = childPreviews[idx];
+    var scrollElem = slidePreviews[0];
+    var peOffsetRight = previewElem.offsetLeft + previewElem.clientWidth
+
+    if(previewElem.offsetLeft < scrollElem.scrollLeft){
+      //If preview element is hidden on left side
+      scrollElem.scrollLeft = previewElem.offsetLeft;
+    }else if(peOffsetRight > scrollElem.scrollLeft + scrollElem.clientWidth){ 
+      //else if preview is hidden on the right side
+      scrollElem.scrollLeft = peOffsetRight - scrollElem.clientWidth; 
+    }
+
     active = idx;
+    this.updateCaption();
+  }
+
+  this.updateFadeout = function(){
+    var elem = slidePreviews[0];
+
+    if(elem.clientWidth == elem.scrollWidth){
+      leftFadeout.removeClass("active");
+      rightFadeout.removeClass("active");
+      return;
+    }
+
+    //When scrolled all the way to the left
+    if(elem.scrollLeft <= fadePadding){
+      leftFadeout.removeClass("active");
+    }else{
+      leftFadeout.addClass("active");
+    }
+
+    //When scrolled all the way to the right
+    if(elem.scrollLeft >= elem.scrollWidth - elem.clientWidth - fadePadding){
+      rightFadeout.removeClass("active");
+    }else{
+      rightFadeout.addClass("active");
+    }
+  }
+
+  this.toggleReadMore = function(){
+    readmore = !readmore;
+    this.updateCaption();
+  }
+
+  this.updateCaption = function(){
+    if(readmore){
+      gradient.removeClass("active");
+      childCaptions.eq(active).removeClass("collapsed");
+      moreButton.html("<i class=\"ui up arrow icon\"></i>Read Less");
+    }else{
+      gradient.addClass("active");
+      childCaptions.eq(active).addClass("collapsed");
+      moreButton.html("<i class=\"ui down arrow icon\"></i>Read More");
+    }
+  }
+
+  this.init = function(){
+    this.reset();
+    var ts = this;
+
+    //Initialize slide buttons
+    $slideShow.find(".left.slide-navi").click(function(){
+      ts.prevSlide();
+    });
+    $slideShow.find(".right.slide-navi").click(function(){
+      ts.nextSlide();
+    });
+
+    //Initialize previews
+    $slideShow.find(".slide-preview").click(function (){
+      ts.chooseSlide($(this).index());
+    });
+
+    $slideShow.find(".read-more").click(function (){
+      ts.toggleReadMore()
+    });
+
+    //Vertically scroll the preview pane
+    slidePreviews.on({
+      "scroll":ts.updateFadeout
+      /*"mousewheel":function (event, delta) {
+        if(this.scrollWidth > this.offsetWidth){
+          this.scrollLeft -= delta;
+          event.preventDefault();
+        }
+      },*/
+    });
+
+    //Use arrows keys to navigate the slides
+    $slideShow.keydown(function(e){
+        if(e.keyCode == 37){
+          ts.prevSlide();
+          e.preventDefault();
+        }else if(e.keyCode == 39){
+          ts.nextSlide();
+          e.preventDefault();
+        }else if(e.keyCode == 13){
+          ts.toggleReadMore();
+        }
+      }
+    );
   }
 
   this.reset = function() {
-    childSlides = $slides.children();
-    childPreviews = $slidePreviews.children();
-    childCaptions = $slideCaptions.children();
+    //Cache fadeout elements
+    rightFadeout = $slideShow.find(".right.fadeout");
+    leftFadeout = $slideShow.find(".left.fadeout");
+
+    //Cache for read more 
+    moreButton = $slideShow.find(".read-more");
+    gradient = $slideShow.find(".gradient");
+
+    //Cache parent elements
+    slides = $slideShow.find(".slide-container");
+    slidePreviews = $slideShow.find(".slide-previews");
+    slideCaptions = $slideShow.find(".slide-captions");
+
+    //Cache array of child elements
+    childSlides = slides.children();
+    childPreviews = slidePreviews.children();
+    childCaptions = slideCaptions.children();
+
+    //Cache the number of slides
     length = childSlides.length;
 
-    if(active < 0)
-      active = 0;
-    else if(active >= length)
-      active = length;
+    this.active = 0;
 
+    //Make sure only the active slides are properly set active
     childSlides.removeClass("active");
     childPreviews.removeClass("active");
     childCaptions.removeClass("active");
-
     childSlides.eq(active).addClass("active");
     childPreviews.eq(active).addClass("active");
     childCaptions.eq(active).addClass("active");
+
+    this.updateFadeout();
+    this.updateCaption();
   }
 }

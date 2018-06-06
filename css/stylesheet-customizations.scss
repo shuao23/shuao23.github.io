@@ -152,6 +152,7 @@ iframe.embedded-player{
 .slide-show{
   overflow: hidden;
   border: 1px solid lightgrey;
+  outline: none;
 }
 
 .rounded.slide-show{
@@ -198,7 +199,6 @@ iframe.embedded-player{
 .active.slide-caption{
   //Unhide the display
   display: block;
-  position: relative;
 }
 
 .slide-caption > *{
@@ -212,8 +212,7 @@ iframe.embedded-player{
 }
 
 .collapsed.slide-caption .desc{
-  position: relative;
-  height: 50px;
+  height: 22px;
   overflow: hidden;
 }
 
@@ -222,33 +221,36 @@ iframe.embedded-player{
   padding-bottom: 1em;
 }
 
-.collapsed.slide-caption .gradient{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.gradient{//========
+  display: none;
+  position: relative;
+  margin-top: -22px;
+  height: 22px;
   width: 100%;
   background: linear-gradient(0, lightgrey, rgba(lightgrey, 0.7), rgba(0,0,0,0));
 }
 
-.slide-caption:not(.collapsed) .gradient{
-  display: none;
+.active.gradient{ //======
+  display: block;
 }
 
-.collapsed.slide-caption .read-more{
+.read-more{
+  display: none;
   width: 100%;
   padding: 0.2em 0;
   text-align: center;
   color: #4183C4;
+  background-color: lightgrey;
+  user-select: none;
 }
 
-.collapsed.slide-caption .read-more:hover{
+.read-more:hover{
   color: #1e70bf;
   background-color:#bbb;
 }
 
-.slide-caption:not(.collapsed) .read-more{
-  display: none;
+.active.read-more{
+  display: block;
 }
 
 .slide-previews{
@@ -272,7 +274,7 @@ iframe.embedded-player{
 
 .slide-preview{
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.3;
   transition: .2s opacity ease;
 }
 
@@ -294,11 +296,11 @@ iframe.embedded-player{
 }
 
 .right.fadeout{
-  background: linear-gradient(-90deg, white, rgba(0,0,0,0)); 
+  background: linear-gradient(-90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)); 
 }
 
 .left.fadeout{
-  background: linear-gradient(90deg, white, rgba(0,0,0,0)); 
+  background: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)); 
 }
 
 .active.fadeout{
