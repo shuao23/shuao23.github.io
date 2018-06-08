@@ -21,7 +21,7 @@ summary: An inter-professional projects program to explore the use of BLE beacon
 </div>
 
 <p>
-  The goal of this project was to research about beacons powered by Bluetooth Low Energy and explore the use of the baecons in a school setting.
+  The goal of this project was to research about beacons powered by Bluetooth Low Energy and to explore the use of the baecons in a school setting. The project team was split into different groups 
 </p>
 
 <div class="ui section divider"></div>
@@ -34,6 +34,7 @@ summary: An inter-professional projects program to explore the use of BLE beacon
       <img class="ref active slide-content" src="/images/biit/campus-map.png">
       <div class="slide-content" style="background-image: url(/images/biit/screenshot-map.png);"></div>
       <div class="slide-content" style="background-image: url(/images/biit/screenshot-nearby.png);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/screenshot-detail.png);"></div>
       <div class="slide-content" style="background-image: url(/images/biit/screenshot-filter-presets.png);"></div>
       <div class="slide-content" style="background-image: url(/images/biit/screenshot-notification.png);"></div>
       <div class="slide-content" style="background-image: url(/images/biit/usecase.png);"></div>
@@ -53,6 +54,7 @@ summary: An inter-professional projects program to explore the use of BLE beacon
         <img class="slide-preview" src="/images/biit/campus-map.png">
         <img class="slide-preview" src="/images/biit/screenshot-map.png">
         <img class="slide-preview" src="/images/biit/screenshot-nearby.png">
+        <img class="slide-preview" src="/images/biit/screenshot-detail.png">
         <img class="slide-preview" src="/images/biit/screenshot-filter-presets.png">
         <img class="slide-preview" src="/images/biit/screenshot-notification.png">   
         <img class="slide-preview" src="/images/biit/usecase.png">                 
@@ -74,6 +76,10 @@ summary: An inter-professional projects program to explore the use of BLE beacon
         </div>
         <div class="slide-caption">
           <h3 class="heading">Nearby Beacons View</h3>
+          <div class="desc">Some description</div>
+        </div>
+        <div class="slide-caption">
+          <h3 class="heading">Location Information</h3>
           <div class="desc">Some description</div>
         </div>
         <div class="slide-caption">
