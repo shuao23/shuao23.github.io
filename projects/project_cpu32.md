@@ -15,5 +15,5 @@ summary: A integrated circuit layout of a simple 32 bit CPU implemented in Veril
 
   <img class="ui large centered rounded image" src="/images/cpu32/layout.png">
   <p>
-    The project was about applying what I have learned about VLSI design throughout the semester to create a simple 32 bit cpu in Verilog. Students were given a 
+    The project was about applying what I have learned about CMOS VLSI design throughout the semester to create a simple 32 bit cpu in Verilog. Throughout the semester, I learned about the process of designing complex CMOS systems from the micro-level to the macro-level. At the lowest level of the layout design, rectangular boxes of pwells, nwells, poly, and other components are drawn to create simple circuits such as gates and inverters. When designing a more complex system, hierarchical design was used where simple layouts were reused to create a more complex design. The design was also tested by using equivalence checking where the functionality of the design was compared to a more simple model (such as register-transfer level code written in Verilog).
   </p>
