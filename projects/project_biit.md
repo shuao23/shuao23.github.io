@@ -138,3 +138,9 @@ summary: An inter-professional projects program to explore the use of BLE beacon
     </div>
   </div>
 </div>
+
+<div class="ui hidden divider"></div>
+
+<p style="text-align: right;">
+  Source: <a href="https://github.com/shuao23/IITBeaconProject" target="_blank"><i class="large github icon"></i>shuao23/IITBeaconProject</a>
+</p>

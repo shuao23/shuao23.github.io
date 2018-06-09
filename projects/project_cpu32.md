@@ -10,7 +10,10 @@ date: "2018-03-25"
 labels:
   - Verilog
   - Virtuoso
-summary: A integrated circuit layout of a simple 32 bit CPU implemented in Verilog 
+summary: A integrated circuit layout of a simple 32 bit CPU implemented in Verilog for ECE 429
 ---
 
-WIP
+  <img class="ui large centered rounded image" src="/images/cpu32/layout.png">
+  <p>
+    The project was about applying what I have learned about VLSI design throughout the semester to create a simple 32 bit cpu in Verilog. Students were given a 
+  </p>
