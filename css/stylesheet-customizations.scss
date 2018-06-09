@@ -1,6 +1,7 @@
 ---
 # Provide front matter so Jekyll processes this file as SASS.
 ---
+
 .horizontal.images{
   display: flex;
   flex-wrap: wrap;
@@ -132,7 +133,7 @@ iframe.embedded-player{
 
 .slide-show{
   overflow: hidden;
-  border: 1px solid lightgrey;
+  border: 1px solid #dadada;
   outline: none;
 }
 
@@ -145,7 +146,7 @@ iframe.embedded-player{
 }
 
 .slide-container{
-  background-color: white;  
+  background-color: #dadada;  
 }
 
 .slide-content{
@@ -177,22 +178,28 @@ div.slide-content{
 
 .slide-caption{
   display: none;
-  background-color: lightgrey;
+  background-color: #555;
 }
 
 .active.slide-caption{
-  //Unhide the display
+  //Show the display
   display: block;
 }
 
 .slide-caption > *{
-  padding: 0 1em;
+  padding: 0 1.5em;
+  color: white;
+  opacity: 0.9;
 }
 
 .slide-caption .heading{
   padding-top: 1em;
   padding-bottom: 0.5em;
   margin: 0;
+}
+
+.slide-caption .empty.heading{
+  padding-bottom: 0;
 }
 
 .collapsed.slide-caption .desc{
@@ -211,7 +218,7 @@ div.slide-content{
   margin-top: -22px;
   height: 22px;
   width: 100%;
-  background: linear-gradient(0, lightgrey, rgba(lightgrey, 0.7), rgba(0,0,0,0));
+  background: linear-gradient(0, #555, rgba(#555, 0.7), rgba(0,0,0,0));
 }
 
 .active.gradient{ 
@@ -221,16 +228,16 @@ div.slide-content{
 .read-more{
   display: none;
   width: 100%;
-  padding: 0.2em 0;
+  padding: 0.3em 0;
   text-align: center;
-  color: #4183C4;
-  background-color: lightgrey;
+  color: lightgrey;
+  background-color: #555;
   user-select: none;
 }
 
 .read-more:hover{
-  color: #1e70bf;
-  background-color:#bbb;
+  color: white;
+  background-color:#333;
 }
 
 .active.read-more{
@@ -241,7 +248,7 @@ div.slide-content{
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  background-color: white;
+  background-color: #333;
 }
 
 .slide-previews.small{
@@ -257,8 +264,9 @@ div.slide-content{
 }
 
 .slide-preview{
+  position: relative;
   height: 100%;
-  opacity: 0.3;
+  opacity: 0.25;
   transition: .2s opacity ease;
 }
 
@@ -362,6 +370,18 @@ div.slide-content{
 
 .slide-navi:hover .slide-navi-arrow{
   color: white;
+}
+
+.progress{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.3em 0.6em;
+  margin: 0.5em;
+  color: white;
+  background-color: rgba(black, 0.5);
+  border-radius: 0.3125em;
+  pointer-events: none;
 }
 
 .centered{

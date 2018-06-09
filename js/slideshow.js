@@ -9,6 +9,8 @@ $(function () {
 function SlideShow($slideShow){
   //Constants
   var fadePadding = 15;
+  //Cache for progress text
+  var progress;
   //Cache for preview fadeouts
   var rightFadeout, leftFadeout;
   //Cache for read more
@@ -20,7 +22,7 @@ function SlideShow($slideShow){
   //Cache for storing number of slides
   var length;
 
-  var readmore = false;
+  var readMore = false;
   var active = 0;
 
 
@@ -61,6 +63,7 @@ function SlideShow($slideShow){
 
     active = idx;
     this.updateCaption();
+    this.updateProgress();
   }
 
   this.updateFadeout = function(){
@@ -88,11 +91,15 @@ function SlideShow($slideShow){
   }
 
   this.toggleReadMore = function(){
-    readmore = !readmore;
+    readMore = !readMore;
     this.updateCaption();
   }
 
   this.updateCaption = function(){
+    if(childCaptions.length == 0){
+      return;
+    }
+
     var currentCap = childCaptions.eq(active);
 
     if(currentCap.children().length == 0){
@@ -102,7 +109,7 @@ function SlideShow($slideShow){
     }else{
       gradient.addClass("active");
       moreButton.addClass("active");
-      if(readmore){
+      if(readMore){
         gradient.removeClass("active");
         currentCap.removeClass("collapsed");
         moreButton.html("<i class=\"ui up arrow icon\"></i>Read Less");
@@ -112,6 +119,10 @@ function SlideShow($slideShow){
         moreButton.html("<i class=\"ui down arrow icon\"></i>Read More");
       }
     }
+  }
+
+  this.updateProgress = function(){
+    progress.text((active + 1) + "/" + length);
   }
 
   this.init = function(){
@@ -166,11 +177,14 @@ function SlideShow($slideShow){
   }
 
   this.reset = function() {
+    //Cache progress text
+    progress = $slideShow.find(".progress");
+
     //Cache fadeout elements
     rightFadeout = $slideShow.find(".right.fadeout");
     leftFadeout = $slideShow.find(".left.fadeout");
 
-    //Cache for read more 
+    //Cache read more 
     moreButton = $slideShow.find(".read-more");
     gradient = $slideShow.find(".gradient");
 
@@ -199,5 +213,6 @@ function SlideShow($slideShow){
 
     this.updateFadeout();
     this.updateCaption();
+    this.updateProgress();
   }
 }
