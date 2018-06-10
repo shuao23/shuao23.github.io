@@ -219,6 +219,7 @@ div.slide-content{
   height: 22px;
   width: 100%;
   background: linear-gradient(0, #555, rgba(#555, 0.7), rgba(0,0,0,0));
+  pointer-events: none;
 }
 
 .active.gradient{ 
@@ -235,7 +236,7 @@ div.slide-content{
   user-select: none;
 }
 
-.read-more:hover{
+.read-more:hover, .cursor.slide-caption-container:hover + .read-more{
   color: white;
   background-color:#333;
 }
@@ -288,11 +289,11 @@ div.slide-content{
 }
 
 .right.fadeout{
-  background: linear-gradient(-90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)); 
+  background: linear-gradient(-90deg, black, rgba(0,0,0,0)); 
 }
 
 .left.fadeout{
-  background: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)); 
+  background: linear-gradient(90deg, black, rgba(0,0,0,0)); 
 }
 
 .active.fadeout{
@@ -392,4 +393,12 @@ div.slide-content{
 .filled{
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 767px){
+  .nav.ui.stackable.grid .column{
+    text-align: center;
+    padding-top: 0.2rem!important;
+    padding-bottom: 0.2rem!important;
+  }
 }

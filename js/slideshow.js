@@ -14,7 +14,7 @@ function SlideShow($slideShow){
   //Cache for preview fadeouts
   var rightFadeout, leftFadeout;
   //Cache for read more
-  var moreButton, gradient;
+  var moreButton, gradient, slideCaptionContainer;
   //Cache for parent containers
   var slides, slidePreviews, slideCaptions;
   //Cache for arrays of child elements
@@ -95,6 +95,8 @@ function SlideShow($slideShow){
     this.updateCaption();
   }
 
+  this.isCaptionExpanded = function(){ return readMore; }
+
   this.updateCaption = function(){
     if(childCaptions.length == 0){
       return;
@@ -112,10 +114,12 @@ function SlideShow($slideShow){
       if(readMore){
         gradient.removeClass("active");
         currentCap.removeClass("collapsed");
+        slideCaptionContainer.removeClass("cursor");
         moreButton.html("<i class=\"ui up arrow icon\"></i>Read Less");
       }else{
         gradient.addClass("active");
         currentCap.addClass("collapsed");
+        slideCaptionContainer.addClass("cursor");
         moreButton.html("<i class=\"ui down arrow icon\"></i>Read More");
       }
     }
@@ -147,7 +151,13 @@ function SlideShow($slideShow){
     });
 
     $slideShow.find(".read-more").click(function (){
-      ts.toggleReadMore()
+      ts.toggleReadMore();
+    });
+
+    slideCaptionContainer.click(function (){
+      if(!ts.isCaptionExpanded()){
+        ts.toggleReadMore();
+      }
     });
 
     //Vertically scroll the preview pane
@@ -187,6 +197,7 @@ function SlideShow($slideShow){
     //Cache read more 
     moreButton = $slideShow.find(".read-more");
     gradient = $slideShow.find(".gradient");
+    slideCaptionContainer = $slideShow.find(".slide-caption-container");
 
     //Cache parent elements
     slides = $slideShow.find(".slide-container");
