@@ -16,7 +16,7 @@ layout: projects
 
   <div class="ui section divider"></div>
 
-  <div class="ui equal width grid">
+  <div class="ui stackable three column grid nav">
     {% assign project_pages = site.pages | where: "type", "project" %}
     {% assign project_pages_ranked = project_pages | where_exp: "page", "page.rank != nil" |  sort: "rank" | reverse %}
     {% assign project_pages_unranked = project_pages | where_exp: "page", "page.rank == nil" | sort: "date" | reverse %}
@@ -36,6 +36,6 @@ layout: projects
     <div class="left aligned column"><a href="{{ prev_page.url }}">{% if prev_page %}<i class="ui left arrow icon"></i> Previous Project</a>{% endif %}</div> 
     <div class="center aligned column"><a href="/projects/#{{ page.id }}"><i class="ui home icon"></i> Back to Projects Page</a></div>
     <div class="right aligned column">{% if next_page %}<a href="{{ next_page.url }}">Next Project <i class="ui right arrow icon"></i></a>{% endif %}</div>
-    
   </div>
 </div>
+
