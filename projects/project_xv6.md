@@ -8,7 +8,7 @@ permalink: projects/xv6
 # All dates must be YYYY-MM-DD format!
 date: "2017-08-20"
 labels:
-  - low-level programming
+  - Low-Level Programming
   - C
   - OS
 summary: A project to extend the features of xv6, a bare-bones operating system 

@@ -8,9 +8,11 @@ permalink: projects/poe
 # All dates must be YYYY-MM-DD format!
 date: "2018-01-08"
 labels:
-  - web development
+  - Web Development
   - HTML/CSS
-  - javascript
+  - Javascript
+  - Powerhubb
+  - Hubbell
 summary: An inter-professional projects program to explore the benefits of power over ethernet 
 ---
 
@@ -21,7 +23,15 @@ summary: An inter-professional projects program to explore the benefits of power
 </p>
 
 <p>
-  Since a single cable can carry data and power, it also adds the benefit of fine control of divces that are being powered
+  Since a single cable can carry data and power, it also adds the benefit of fine control of lights that are connected. The PoE lights are connected to a node which separates the power from the data supplied from the ethernet cable. In addition to the lights, the node can also connect sensors and switches which can control specific set of lights. The node is then connected to a special switch that can superimpose the power on the ethernet cables. In addition to the powered devices, a gateway server is connected to the same network to control all of the PoE lights. The server controls what switches and sensors effect which lights and the server can be controlled remotely through the cloud. The setup for this project can be seen in the schematic above.
+</p>
+
+<p>
+  For this project, power over ethernet was demonstrated by creating scaled-down models of different environments. The project was worked on as a team which separated into smaller groups to work on construction, data analysis, networking, and software development. The construction team was responsible for building a small model for an office setting and school setting. The data analysis team took existing data for PoE lighting and traditional lighting for researching the characteristics of PoE lighting. The networking team was responsible for connecting and setting up the nodes and the switch. I was in the software development team which was responsible to develop a website to control the lights through a virtual switch. Although the server comes with a software to control the lights, it gives too much privilege to the user. The website serves it's purpose by providing a simplified stripped down version of the software to control only the lights which the user has access to. The website communicated with the server through the REST API provided by Hubbell. 
+</p>
+
+<p>
+  Through this project I have learned the importance of PoE lighting and the impact that it brings for smart lighting choices. The flexibility of the PoE lighting brings control to each individual light fixture. Since switches and sensors are also connected to the server, the lights that the it controls can be modified at anytime without any hardware changes. Additionally, similar to what our team did in this project, the lights can be controlled through a virtual switch with a network capable device. With the power that the PoE system brings, there is a new possibility of smart lighting.
 </p>
 
 <div class="ui section divider"></div>
@@ -59,11 +69,11 @@ summary: An inter-professional projects program to explore the benefits of power
       <div class="slide-captions">
         <div class="active slide-caption">
           <h3 class="heading">Home Page</h3>
-          <div class="desc">The home page that the programming team created for controlling the PoE lights </div>
+          <div class="desc">The home page that the programming team created for controlling the PoE lights. The two button below the introduction section is for connecting two the two environments that the construction team built. The school environment has special LEDs that has variable color temperature. The office environment has a daylight sensor to measure the amount of natural light so the lights can be dimmed when the sun is lighting the room.</div>
         </div>
         <div class="slide-caption">
           <h3 class="heading">Virtual Switch</h3>
-          <div class="desc">The virtual switch page gives the user the control over the properties of light.</div>
+          <div class="desc">The virtual switch page for the school environment which gives the user the control over the properties of light such as intensity and color temperature. </div>
         </div>
       </div>
       <div class="active gradient"></div>
