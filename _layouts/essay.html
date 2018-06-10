@@ -10,7 +10,7 @@ layout: essays
 
   <div class="ui section divider"></div>
 
-  <div class="ui equal width grid">
+  <div class="ui stackable three column grid nav">
     {% assign essay_pages = site.pages | where: "type", "essay" %}
 
     {% for pge in essay_pages %}
@@ -24,8 +24,8 @@ layout: essays
       {% endif %}
     {% endfor %}
 
-    <div class="left aligned column"><a href="{{ prev_page.url }}">{% if prev_page %}<i class="ui left arrow icon"></i> Previous Essay</a>{% endif %}</div>
-    <div class="center aligned column"><a href="/essays/#{{ page.id }}"><i class="ui home icon"></i> Back to Essays Page</a></div>
-    <div class="right aligned column">{% if next_page %}<a href="{{ next_page.url }}">Next Essay <i class="ui right arrow icon"></i></a>{% endif %}</div>
+    <div class="left aligned column">{% if prev_page %}<a href="{{ prev_page.url }}"><i class="ui inline left arrow icon"></i> Previous Essay</a>{% endif %}</div>
+    <div class="center aligned column"><a href="/essays/#{{ page.id }}"><i class="ui inline home icon"></i> Back to Essays Page</a></div>
+    <div class="right aligned column">{% if next_page %}<a href="{{ next_page.url }}">Next Essay <i class="ui inline right arrow icon"></i></a>{% endif %}</div>
   </div>
 </div>
