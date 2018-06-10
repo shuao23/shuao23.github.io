@@ -73,7 +73,7 @@ summary: An inter-professional projects program to explore the benefits of power
         </div>
         <div class="slide-caption">
           <h3 class="heading">Virtual Switch</h3>
-          <div class="desc">The virtual switch page for the school environment which gives the user the control over the properties of light such as intensity and color temperature. </div>
+          <div class="desc">The virtual switch page for the school environment which gives users control over the properties of light such as intensity and color temperature. </div>
         </div>
       </div>
       <div class="active gradient"></div>
