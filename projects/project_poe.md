@@ -31,7 +31,7 @@ summary: An inter-professional projects program to explore the benefits of power
 </p>
 
 <p>
-  Through this project I have learned the importance of PoE lighting and the impact that it brings for smart lighting choices. The flexibility of the PoE lighting brings control to each individual light fixture. Since switches and sensors are also connected to the server, the lights that the it controls can be modified at anytime without any hardware changes. Additionally, similar to what our team did in this project, the lights can be controlled through a virtual switch with a network capable device. With the power that the PoE system brings, there is a new possibility of smart lighting.
+  Through this project I have learned the importance of PoE lighting and the impact that it brings for smart lighting choices. The flexibility of the PoE lighting brings control to each individual light fixture. Since switches and sensors are also connected to the server, the lights that the it controls can be modified at anytime without any hardware changes. Additionally, similar to what our team did in this project, the lights can be controlled through a virtual switch with a network capable device. With the power that the PoE system brings, there is a new possibility for smart lighting.
 </p>
 
 <div class="ui section divider"></div>
