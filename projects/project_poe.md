@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: images/project-cover/large/poe-banner.png
-title:  Power over Ethernet [WIP]
+title:  Power over Ethernet 
 id: poe
 permalink: projects/poe
 # All dates must be YYYY-MM-DD format!
@@ -69,11 +69,11 @@ summary: An inter-professional projects program to explore the benefits of power
       <div class="slide-captions">
         <div class="active slide-caption">
           <h3 class="heading">Home Page</h3>
-          <div class="desc">The home page that the programming team created for controlling the PoE lights. The two button below the introduction section is for connecting two the two environments that the construction team built. The school environment has special LEDs that has variable color temperature. The office environment has a daylight sensor to measure the amount of natural light so the lights can be dimmed when the sun is lighting the room.</div>
+          <div class="desc">The home page of the website which the programming team created for controlling the PoE lights. The two button below the introduction section is for connecting to two of the environments that the construction team built. The school environment has special LEDs that demonstrates variable color temperature. The office environment has a daylight sensor to measure the intensity of natural light so the artificial lights can be dimmed.</div>
         </div>
         <div class="slide-caption">
           <h3 class="heading">Virtual Switch</h3>
-          <div class="desc">The virtual switch page for the school environment which gives users control over the properties of light such as intensity and color temperature. </div>
+          <div class="desc">The virtual switch page for the school environment which gives users control over the properties of light such as intensity and color temperature. The virtual switch can only be changed by the user of the room.</div>
         </div>
       </div>
       <div class="active gradient"></div>
