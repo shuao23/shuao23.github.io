@@ -137,6 +137,19 @@
   ],
   "volunteer": [
     {
+      "organization": "Power over Ethernet",
+      "website": "https://shuao23.github.io/projects/poe",
+      "position": "Web Developer",
+      "startDate": "2018",
+      "endDate": "",
+      "summary": "Worked on a website as a member on the programming team",
+      "highlights": [
+        "Researched how to integrate power over ethernet into a network",
+        "Worked on a team to develop a website for the user to control lights through a virtual switch",
+        "Managed communications between team members and other teams",
+      ]
+    },
+    {
       "organization": "Virtual IIT with Beacon Technology",
       "website": "https://shuao23.github.io/projects/biit",
       "position": "Software Engineer",
