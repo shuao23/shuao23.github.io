@@ -22,12 +22,16 @@ labels:
 <h2>Introduction</h2>
 
 <p>
-  The development of Project Alexa 
+  Project Alexa was started as a personal summer project to understand the flow for a 3d game development pipeline. When creating a game, there are many steps and processes involved from importing art assets to managing game scripts. Through the experience from this project I was able to learn what it takes to make a fun and intuitive video game. The team consisted of  <a href="https://andku23.github.io" target="_blank">Andrew Kurano</a> and I, a total of two people. I was the lead programmer and Andrew was the lead artist. Since we only had two people, we shared many other roles that were necessary and also gave each other feedback for our work.
 </p>
 
 <div class="ui section divider"></div>
 
 <h2>Planning</h2>
+
+<p>
+  The first couple of days were spent on planning for the game. Since we had a limited time to work on the project (during summer break), we decided that we should split the development into smaller parts. We named the summer portion of the project, version 1 so we can further improve on the project even after the summer has ended. During the planning phase, we discussed what can we finish during the limited amount of time and placed deadline for each milestone. 
+</p>
 
 <p>
 
