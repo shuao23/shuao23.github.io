@@ -16,7 +16,7 @@ labels:
 ---
 
 <div class="paragraph">
-  <img class="ui fluid centered rounded image" src="/images/shape-shifter/cover-photo.png">
+  <img class="ui fluid centered rounded image" src="/images/shape-shifter/cover-photo.webp">
 </div>
 
 <h2>Introduction</h2>
@@ -34,8 +34,8 @@ labels:
 </p>
 
 <div class="horizontal medium images">
-    <img class="ui rounded image" src="/images/shape-shifter/prototype-1.jpg" tittle="Color Balance Prototype">
-    <img class="ui rounded image" src="/images/shape-shifter/prototype-2.jpg" tittle="Monkey Climb Prototype">
+    <img class="ui rounded image" src="/images/shape-shifter/prototype-1.webp" tittle="Color Balance Prototype">
+    <img class="ui rounded image" src="/images/shape-shifter/prototype-2.webp" tittle="Monkey Climb Prototype">
 </div>  
 <div class="image-caption paragraph">Screenshots of the prototypes for Color Balance and Monkey Climb</div>
 
@@ -60,7 +60,7 @@ labels:
 <h2>Development</h2>
 
 <div class="paragraph">
-  <img class="ui centered big rounded image" src="/images/shape-shifter/main-menu.png">
+  <img class="ui centered big rounded image" src="/images/shape-shifter/main-menu.webp">
 </div>
 
 <p>
@@ -89,7 +89,7 @@ public Vector3 GetVertexPos(float shapeSides, int vertexIdx) {
 <div class="ui hidden divider"></div>
 
 <div class="paragraph">
-  <img class="ui centered big rounded image" src="/images/shape-shifter/edges.png">
+  <img class="ui centered big rounded image" src="/images/shape-shifter/edges.webp">
   <div class="image-caption">The edges used in Shape Shifter, rendered in Blender</div>
 </div>
 
@@ -100,7 +100,7 @@ public Vector3 GetVertexPos(float shapeSides, int vertexIdx) {
 <div class="ui hidden divider"></div>
 
 <div class="paragraph">
-  <img class="ui centered big rounded image" src="/images/shape-shifter/gameplay.png">
+  <img class="ui centered big rounded image" src="/images/shape-shifter/gameplay.webp">
 </div>
 
 <p>
@@ -145,7 +145,7 @@ fixed4 frag (v2f i) : SV_Target
 </h3>
 
 <div class="paragraph">
-  <img class="ui centered big rounded image" src="/images/shape-shifter/highscore.png">
+  <img class="ui centered big rounded image" src="/images/shape-shifter/highscore.webp">
   <div class="image-caption">Scoreboard in Shape Shifter</div>
 </div>
 

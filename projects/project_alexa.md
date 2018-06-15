@@ -2,7 +2,7 @@
 layout: project
 type: project
 rank: 9.5
-image: images/project-cover/large/alexa-banner.png
+image: images/project-cover/large/alexa-banner.webp
 title: Project Alexa
 id: alexa
 permalink: projects/alexa

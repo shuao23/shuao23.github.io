@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/project-cover/large/xv6-banner.png
+image: images/project-cover/large/xv6-banner.webp
 title:  Extending xv6
 id: xv6
 permalink: projects/xv6
@@ -14,7 +14,7 @@ labels:
 summary: A project to extend the features of xv6, a bare-bones operating system 
 ---
 
-<img src="/images/xv6/syscall.png" alt="" class="ui large rounded centered image">
+<img src="/images/xv6/syscall.webp" alt="" class="ui big rounded centered image">
 
 <p>
   I modified the xv6 operating system to demonstrate what I have learned in CS 451 (Operating Systems) about how an operating system functions. The xv6 operating system is a reimplementation of sixth edition Unix written in ANSI C. Although xv6 is simple when compared to modern operating systems, xv6 has all of the important features that a operating system needs to have. I started this project by understanding how system calls (calls to the operating system) worked through tracing through the source code. After figuring out how the system calls worked, I extended xv6 by adding new syscalls such as uv2p (user virtual address to physical address), and ps (get process state). Additionally, I added extent, a new file system, to the operating system. The extent file system works by storing consecutive references to blocks similar to an array. 

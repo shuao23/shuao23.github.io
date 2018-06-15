@@ -2,7 +2,7 @@
 layout: project
 type: project
 rank: 10
-image: images/project-cover/large/shape-shifter-banner.png
+image: images/project-cover/large/shape-shifter-banner.webp
 title: Shape Shifter
 id: shape-shifter
 permalink: projects/shape-shifter

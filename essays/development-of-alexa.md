@@ -16,7 +16,7 @@ labels:
 ---
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/gameplay.png">
+  <img class="ui huge centered rounded image" src="/images/alexa/gameplay.webp">
 </div>
 
 <h2>Introduction</h2>
