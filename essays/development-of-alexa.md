@@ -22,7 +22,7 @@ labels:
 <h2>Introduction</h2>
 
 <p>
-  The development of Project Alexa
+  The development of Project Alexa 
 </p>
 
 <div class="ui section divider"></div>
