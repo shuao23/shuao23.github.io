@@ -107,7 +107,22 @@ labels:
 
 <div class="paragraph">
   <img class="ui big centered rounded image" src="/images/alexa/debug-view-2.webp">
-  <div class="image-caption paragraph">Testing area to test character controller system</div>
+  <div class="image-caption paragraph">Testing area for the character controller system</div>
+</div>
+
+<div class="paragraph">
+  <img class="ui big centered rounded image" src="/images/alexa/testing-block.webp">
+  <div class="image-caption paragraph">Testing blocking angles for right and left block</div>
+</div>
+
+<div class="paragraph">
+  <img class="ui big centered rounded image" src="/images/alexa/testing-onhit.webp">
+  <div class="image-caption paragraph">Testing on-hit event by spawning on-hit particles</div>
+</div>
+
+<div class="paragraph">
+  <img class="ui big centered rounded image" src="/images/alexa/testing-slide.webp">
+  <div class="image-caption paragraph">Testing the athletic ability of Alexa</div>
 </div>
 
 <p>
