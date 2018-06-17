@@ -49,7 +49,7 @@ labels:
   During the first few weeks of development, steady progress was made, and we thought there was more than enough time to complete the project. However as the weeks flew by, we realized that our progress was slower than expected, and due dates were repeatingly being pushed back. I was working on the camera rig script (which controls the third person camera) when I was supposed to be working on the character motor script (which controls the player and its animations) according to the initial plan. Since this was our first major 3d Unity project it may have been difficult for us to predict the amount of time needed for each task. Although the idea of the project being too ambitious crossed our minds, Andrew and I worked our butt off to complete this project before the summer ends.
 </p>
 
-<h3>Camera System</h3>
+<h3>Camera Rig System</h3>
 
 <div class="paragraph">
   <img class="ui huge centered rounded image" src="/images/alexa/fov.webp">
