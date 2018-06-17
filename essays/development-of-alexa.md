@@ -30,7 +30,7 @@ labels:
 <h2>Development of Version 1</h2>
 
 <div class="paragraph">
-  <img class="ui big centered rounded image" src="/images/alexa/alexa-v1.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/alexa-v1.webp">
   <div class="image-caption paragraph">Gameplay of Alexa version 1</div>
 </div>
 
@@ -42,21 +42,26 @@ labels:
 
 <div class="paragraph">
   <img class="ui huge centered rounded image" src="/images/alexa/plan.webp">
+  <div class="image-caption paragraph">Project timeline (originally made in Microsoft Project)</div>
 </div>
+
+<p>
+  During the first few weeks of development, steady progress was made, and we thought there was more than enough time to complete the project. However as the weeks flew by, we realized that our progress was slower than expected, and due dates were repeatingly being pushed back. I was working on the camera rig script (which controls the third person camera) when I was supposed to be working on the character motor script (which controls the player and its animations) according to the initial plan. Since this was our first major 3d Unity project it may have been difficult for us to predict the amount of time needed for each task. Although the idea of the project being too ambitious crossed our minds, Andrew and I worked our butt off to complete this project before the summer ends.
+</p>
 
 <h3>Camera System</h3>
 
 <p>
-
+  I believe that in order to have a good camera system, the player always needs to have a direct line of site from the character, and the control needs to feel seamless so that it becomes second nature for the user.
 </p>
 
 <div class="paragraph">
-  <img class="ui big centered rounded image" src="/images/alexa/fov.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/fov.webp">
   <div class="image-caption paragraph">Fov change and smooth follow</div>
 </div>
 
 <div class="paragraph">
-  <img class="ui big centered rounded image" src="/images/alexa/small-space-camera.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/small-space-camera.webp">
   <div class="image-caption paragraph">Demo stage demonstrating the camera rig in a narrow ally way</div>
 </div>
 
@@ -106,22 +111,22 @@ labels:
 <h3>Character Controller System</h3>
 
 <div class="paragraph">
-  <img class="ui big centered rounded image" src="/images/alexa/debug-view-2.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/debug-view-2.webp">
   <div class="image-caption paragraph">Testing area for the character controller system</div>
 </div>
 
 <div class="paragraph">
-  <img class="ui big centered rounded image" src="/images/alexa/testing-block.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/testing-block.webp">
   <div class="image-caption paragraph">Testing blocking angles for right and left block</div>
 </div>
 
 <div class="paragraph">
-  <img class="ui big centered rounded image" src="/images/alexa/testing-onhit.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/testing-onhit.webp">
   <div class="image-caption paragraph">Testing on-hit event by spawning on-hit particles</div>
 </div>
 
 <div class="paragraph">
-  <img class="ui big centered rounded image" src="/images/alexa/testing-slide.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/testing-slide.webp">
   <div class="image-caption paragraph">Testing the athletic ability of Alexa</div>
 </div>
 
@@ -132,7 +137,7 @@ labels:
 <h3>Enemy AI System</h3>
 
 <div class="paragraph">
-  <img class="ui big centered rounded image" src="/images/alexa/debug-view-1.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/debug-view-1.webp">
   <div class="image-caption paragraph">Debug view of enemy AI</div>
 </div>
 
@@ -143,7 +148,7 @@ labels:
 <h3>Summary of Version 1</h3>
 
 <p>
-
+  Insert something along the lines of "although games are known for there delays"
 </p>
 
 <div class="ui section divider"></div>
@@ -151,7 +156,7 @@ labels:
 <h2>Development of Version 2</h2>
 
 <div class="paragraph">
-  <img class="ui big centered rounded image" src="/images/alexa/alexa-v2.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/alexa-v2.webp">
   <div class="image-caption paragraph">Gameplay of Alexa version 2</div>
 </div>
 
