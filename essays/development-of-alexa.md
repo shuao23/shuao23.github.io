@@ -51,19 +51,27 @@ labels:
 
 <h3>Camera System</h3>
 
-<p>
-  I believe that in order to have a good camera system, the player always needs to have a direct line of site from the character, and the control needs to feel seamless so that it becomes second nature for the user.
-</p>
-
 <div class="paragraph">
   <img class="ui huge centered rounded image" src="/images/alexa/fov.webp">
-  <div class="image-caption paragraph">Fov change and smooth follow</div>
+  <div class="image-caption paragraph">Field of view change and smooth follow</div>
 </div>
+
+<p>
+  I believe that in order to have a good camera system, the player always needs to have a direct line of site from the character, and the control needs to feel seamless and smooth so that it becomes second nature for the user. In order to accomplish this, I first started by writing the code to smoothly follow the player (the behavior can be seen above). Smooth follow is when the camera does not follow the exact movements of the player. Instead, the camera is always trying to catch up with the player. The speed for the camera to catch up depends on the distance between the current camera position and the ideal position (where the camera was supposed to be without smooth follow). The farther the distance, the faster the camera tries to catch up. As a result, small rapid movements of the player will not translate to small rapid movements of the camera. However during testing, this implementation worked well in walking and running speeds, but if the subject moves extremely fast, the camera would fall behind too much and loose site of the subject. I solved this problem by clamping the distance between the subject and camera with a max value.
+</p>
+
+<p>
+  After testing the camera rig so far in high speeds, I wanted some sort of visual cues on how fast the player was moving. I already knew that a wider field of view increase the sense of speed from a film making class I have taken before. I first increased the field of view of the camera but I did not feel the impact that I wanted. Next, I experimented with changing the field of view based on speed. The result (which can be seen in the image above) had a much better impact and I could tell the change of speed was happening. 
+</p>
 
 <div class="paragraph">
   <img class="ui huge centered rounded image" src="/images/alexa/small-space-camera.webp">
   <div class="image-caption paragraph">Demo stage demonstrating the camera rig in a narrow ally way</div>
 </div>
+
+<p>
+  Next, I worked on always maintaining a direct line of site of the character from the camera. I implemented this by casting a ray from the character to the camera. If there was anything between the camera and the character, the camera adjusted the distance from the character so it would appear in front of the blocking object. Next, I smoothed the change in distance value using the same function I wrote for smooth follow. When the line of site is lost, the camera will immediately dolly forward to maintain the view of the character. After the blocking object has been cleared, the camera will dolly back slowly to its original distance. The behaviour can be seen in the image above.
+</p>
 
 
 <div class="paragraph rounded centered slide-show" style="max-width: 800px;" tabindex="1">
@@ -72,6 +80,7 @@ labels:
       <img class="ref slide-content" src="/images/alexa/camera-shake-comparison.webp">
       <div class="slide-content" style="background-image: url(/images/alexa/perlin.webp);"></div>
       <div class="slide-content" style="background-image: url(/images/alexa/damped-sine.webp);"></div>
+      <div class="slide-content" style="background-image: url(/images/alexa/sword-impact.webp);"></div>
     </div>
     <a class="cursor left slide-navi">
       <div class="slide-navi-bkgnd"></div>
@@ -87,8 +96,9 @@ labels:
   <div class="slide-previews-container">
     <div class="slide-previews">
         <img class="slide-preview" src="/images/alexa/camera-shake-comparison.webp">
-        <img class="slide-preview" src="/images/alexa/perlin.webp">
-        <img class="slide-preview" src="/images/alexa/damped-sine.webp">
+        <img class="slide-preview" src="/images/alexa/perlin-preview.webp">
+        <img class="slide-preview" src="/images/alexa/damped-sine-preview.webp">
+        <img class="slide-preview" src="/images/alexa/sword-impact-preview.webp">
     </div>
     <div class="right small fadeout"></div>
     <div class="left small fadeout"></div>
@@ -107,6 +117,10 @@ labels:
     </div>
   </div>
 </div>
+
+<p>
+  Lastly, I got a request from the artist to implement a camera shake to emphasize heavy impact. Camera shake works by applying a noise to the original position so it moves as if a shockwave had hit the camera. The noise needs to be a function of time so the camera will shake in a smooth manner. If the noise function is too random, the camera will appear to be teleporting randomly instead of properly shaking. Two functions that are well suited for camera shake are perlin noise and damped sine functions. These two different shake functions give a different sense of impact as seen in the images above. I implemented both functions and let the artist choose which function is better for the situation. In the final game, the camera shake was used when the enemy swinged the floor down into the ground which increased the feel for a much greater impact. 
+</p>
 
 <h3>Character Controller System</h3>
 
