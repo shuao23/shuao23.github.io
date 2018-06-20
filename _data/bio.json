@@ -79,24 +79,33 @@
   ],
   "skills": [
     {
-      "name": "Languages and Frameworks",
+      "name": "Programming Languages",
       "level": "",
       "keywords": [
         "C#",
         "C",
         "Java",
         "Assembly",
-        "Javascript",
-        "Python",
-        "HTML/CSS"
+        "Python"
       ]
     },
     {
-      "name": "Toolsets/OS",
+      "name": "Web Development",
+      "level": "",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Jquery"
+      ]
+    },
+    {
+      "name": "OS/Toolsets",
       "level": "",
       "keywords": [
         "MacOS",
         "Linux/Ubuntu",
+        "Windows",
         "Git/GitHub",
         "Adobe Creative Suite",
         "Android Studio"
