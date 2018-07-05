@@ -16,7 +16,7 @@ labels:
 ---
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/gameplay.png">
+  <img class="ui huge centered rounded image" src="/images/alexa/alexa-banner.png">
 </div>
 
 <h2>Introduction</h2>
@@ -194,6 +194,4 @@ labels:
 <p style="width: 100%; text-align: right; margin-top: 3rem;">
   Go to <a href="/projects/alexa">project overview <i class="left arrow icon"></i></a>
 </p>
-
-<img class="ui fluid rounded image" src="/images/alexa/alexa-banner.png">
 
