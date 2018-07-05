@@ -16,7 +16,7 @@ labels:
 ---
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/gameplay.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/gameplay.png">
 </div>
 
 <h2>Introduction</h2>
@@ -30,7 +30,7 @@ labels:
 <h2>Development of Version 1</h2>
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/alexa-v1.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/alexa-v1.gif">
   <div class="image-caption paragraph">Gameplay of Alexa version 1</div>
 </div>
 
@@ -41,7 +41,7 @@ labels:
 </p>
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/plan.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/plan.png">
   <div class="image-caption paragraph">Project timeline (originally made in Microsoft Project)</div>
 </div>
 
@@ -52,7 +52,7 @@ labels:
 <h3>Camera Rig System</h3>
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/fov.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/fov.gif">
   <div class="image-caption paragraph">Field of view change and smooth follow</div>
 </div>
 
@@ -65,7 +65,7 @@ labels:
 </p>
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/small-space-camera.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/small-space-camera.gif">
   <div class="image-caption paragraph">Demo stage demonstrating the camera rig in a narrow ally way</div>
 </div>
 
@@ -77,10 +77,10 @@ labels:
 <div class="paragraph rounded centered slide-show" style="max-width: 800px;" tabindex="1">
   <div class="slide-show-view">
     <div class="cursor slide-container">
-      <img class="ref slide-content" src="/images/alexa/camera-shake-comparison.webp">
-      <div class="slide-content" style="background-image: url(/images/alexa/perlin.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/alexa/damped-sine.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/alexa/sword-impact.webp);"></div>
+      <img class="ref slide-content" src="/images/alexa/camera-shake-comparison.jpg">
+      <div class="slide-content" style="background-image: url(/images/alexa/perlin.gif);"></div>
+      <div class="slide-content" style="background-image: url(/images/alexa/damped-sine.gif);"></div>
+      <div class="slide-content" style="background-image: url(/images/alexa/sword-impact.gif);"></div>
     </div>
     <a class="cursor left slide-navi">
       <div class="slide-navi-bkgnd"></div>
@@ -95,10 +95,10 @@ labels:
 
   <div class="slide-previews-container">
     <div class="slide-previews">
-        <img class="slide-preview" src="/images/alexa/camera-shake-comparison.webp">
-        <img class="slide-preview" src="/images/alexa/perlin-preview.webp">
-        <img class="slide-preview" src="/images/alexa/damped-sine-preview.webp">
-        <img class="slide-preview" src="/images/alexa/sword-impact-preview.webp">
+        <img class="slide-preview" src="/images/alexa/camera-shake-comparison.jpg">
+        <img class="slide-preview" src="/images/alexa/perlin-preview.jpg">
+        <img class="slide-preview" src="/images/alexa/damped-sine-preview.jpg">
+        <img class="slide-preview" src="/images/alexa/sword-impact-preview.jpg">
     </div>
     <div class="right small fadeout"></div>
     <div class="left small fadeout"></div>
@@ -125,7 +125,7 @@ labels:
 <h3>Character Motor and Combat System</h3>
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/testing-slide.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/testing-slide.gif">
   <div class="image-caption paragraph">Testing the athletic ability of Alexa</div>
 </div>
 
@@ -134,7 +134,7 @@ labels:
 </p>
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/debug-view-2.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/debug-view-2.png">
   <div class="image-caption paragraph">Testing area for the character motor system</div>
 </div>
 
@@ -143,7 +143,7 @@ labels:
 </p>
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/testing-block.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/testing-block.gif">
   <div class="image-caption paragraph">Testing blocking angles for right and left block</div>
 </div>
 
@@ -152,7 +152,7 @@ labels:
 </p>
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/testing-onhit.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/testing-onhit.gif">
   <div class="image-caption paragraph">Testing on-hit event by spawning on-hit particles</div>
 </div>
 
@@ -163,7 +163,7 @@ labels:
 <h3>Enemy AI System</h3>
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/debug-view-1.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/debug-view-1.png">
   <div class="image-caption paragraph">Debug view of enemy AI</div>
 </div>
 
@@ -182,7 +182,7 @@ labels:
 <h2>Development of Version 2</h2>
 
 <div class="paragraph">
-  <img class="ui huge centered rounded image" src="/images/alexa/alexa-v2.webp">
+  <img class="ui huge centered rounded image" src="/images/alexa/alexa-v2.gif">
   <div class="image-caption paragraph">Gameplay of Alexa version 2</div>
 </div>
 
@@ -194,4 +194,6 @@ labels:
 <p style="width: 100%; text-align: right; margin-top: 3rem;">
   Go to <a href="/projects/alexa">project overview <i class="left arrow icon"></i></a>
 </p>
+
+<img class="ui fluid rounded image" src="/images/alexa/alexa-banner.png">
 

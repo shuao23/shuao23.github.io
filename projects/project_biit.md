@@ -2,7 +2,7 @@
 layout: project
 type: project
 rank: 9
-image: images/project-cover/large/biit-banner.webp
+image: images/project-cover/large/biit-banner.jpg
 title: bIIT
 subtitle: Enabling Virtual Illinois Tech with Beacon Technology
 id: biit
@@ -21,15 +21,15 @@ summary: An inter-professional projects program to explore the use of BLE beacon
     <div class="cursor slide-container">
       <!--<img class="ref slide-content" src="images/biit/campus-map.png">-->
       <!--<div class="ref slide-content" style="background-image: url(/images/biit/campus-map.png); height: 350px;"></div>-->
-      <img class="ref active slide-content" src="/images/biit/presentation/0.webp">
-      <div class="slide-content" style="background-image: url(/images/biit/presentation/1.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/presentation/2.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/presentation/3.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/presentation/4.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/presentation/5.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/presentation/6.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/presentation/7.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/presentation/8.webp);"></div>
+      <img class="ref active slide-content" src="/images/biit/presentation/0.jpg">
+      <div class="slide-content" style="background-image: url(/images/biit/presentation/1.jpg);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/presentation/2.jpg);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/presentation/3.jpg);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/presentation/4.jpg);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/presentation/5.jpg);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/presentation/6.jpg);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/presentation/7.jpg);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/presentation/8.jpg);"></div>
     </div>
     <a class="cursor left slide-navi">
       <div class="slide-navi-bkgnd"></div>
@@ -44,15 +44,15 @@ summary: An inter-professional projects program to explore the use of BLE beacon
 
   <div class="slide-previews-container">
     <div class="slide-previews">
-        <img class="slide-preview" src="/images/biit/presentation/0.webp">
-        <img class="slide-preview" src="/images/biit/presentation/1.webp">
-        <img class="slide-preview" src="/images/biit/presentation/2.webp">
-        <img class="slide-preview" src="/images/biit/presentation/3.webp">
-        <img class="slide-preview" src="/images/biit/presentation/4.webp">
-        <img class="slide-preview" src="/images/biit/presentation/5.webp">
-        <img class="slide-preview" src="/images/biit/presentation/6.webp">
-        <img class="slide-preview" src="/images/biit/presentation/7.webp">
-        <img class="slide-preview" src="/images/biit/presentation/8.webp">
+        <img class="slide-preview" src="/images/biit/presentation/0.jpg">
+        <img class="slide-preview" src="/images/biit/presentation/1.jpg">
+        <img class="slide-preview" src="/images/biit/presentation/2.jpg">
+        <img class="slide-preview" src="/images/biit/presentation/3.jpg">
+        <img class="slide-preview" src="/images/biit/presentation/4.jpg">
+        <img class="slide-preview" src="/images/biit/presentation/5.jpg">
+        <img class="slide-preview" src="/images/biit/presentation/6.jpg">
+        <img class="slide-preview" src="/images/biit/presentation/7.jpg">
+        <img class="slide-preview" src="/images/biit/presentation/8.jpg">
     </div>
     <div class="right small fadeout"></div>
     <div class="left small fadeout"></div>
@@ -78,11 +78,11 @@ summary: An inter-professional projects program to explore the use of BLE beacon
     <div class="cursor slide-container">
       <!--<img class="ref slide-content" src="images/biit/campus-map.png">-->
       <!--<div class="ref slide-content" style="background-image: url(/images/biit/campus-map.png); height: 350px;"></div>-->
-      <div class="ref slide-content" style="background-image: url(/images/biit/screenshot-map.webp); height: 400px;"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/screenshot-nearby.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/screenshot-notification.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/screenshot-detail.webp);"></div>
-      <div class="slide-content" style="background-image: url(/images/biit/screenshot-filter-presets.webp);"></div>
+      <div class="ref slide-content" style="background-image: url(/images/biit/screenshot-map.jpg); height: 400px;"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/screenshot-nearby.jpg);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/screenshot-notification.jpg);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/screenshot-detail.jpg);"></div>
+      <div class="slide-content" style="background-image: url(/images/biit/screenshot-filter-presets.jpg);"></div>
     </div>
     <a class="cursor left slide-navi">
       <div class="slide-navi-bkgnd"></div>
@@ -97,11 +97,11 @@ summary: An inter-professional projects program to explore the use of BLE beacon
 
   <div class="slide-previews-container">
     <div class="slide-previews">
-        <img class="slide-preview" src="/images/biit/screenshot-map.webp">
-        <img class="slide-preview" src="/images/biit/screenshot-nearby.webp">
-        <img class="slide-preview" src="/images/biit/screenshot-notification.webp">
-        <img class="slide-preview" src="/images/biit/screenshot-detail.webp">
-        <img class="slide-preview" src="/images/biit/screenshot-filter-presets.webp">
+        <img class="slide-preview" src="/images/biit/screenshot-map.jpg">
+        <img class="slide-preview" src="/images/biit/screenshot-nearby.jpg">
+        <img class="slide-preview" src="/images/biit/screenshot-notification.jpg">
+        <img class="slide-preview" src="/images/biit/screenshot-detail.jpg">
+        <img class="slide-preview" src="/images/biit/screenshot-filter-presets.jpg">
     </div>
     <div class="right small fadeout"></div>
     <div class="left small fadeout"></div>
