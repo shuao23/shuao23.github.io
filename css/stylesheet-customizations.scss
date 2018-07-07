@@ -356,9 +356,11 @@ div.slide-content{
   position: relative;
   top: -50%;
   transform: translateY(-50%);
-  width: fit-content;
+  width: 15pt;
+  text-align: center;
   color: black;
   transition: 0.2s color ease;
+  font-size: 15pt;
 }
 
 .right .slide-navi-arrow{
